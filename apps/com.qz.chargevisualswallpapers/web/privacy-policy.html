@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Chính sách quyền riêng tư - Charge Visuals</title>
+<title>Privacy Policy - Charge Visuals</title>
 <meta name="theme-color" content="#0E0F12">
 <link rel="icon" href="img/icon-96.png">
 <link rel="stylesheet" href="tokens.css">
@@ -12,88 +12,88 @@
 <body class="legal">
 <header class="bar">
   <a class="wordmark" href="index.html"><img src="img/icon-96.png" width="32" height="32" alt="">Charge Visuals</a>
-  <nav><a href="privacy-policy.html" aria-current="page">Quyền riêng tư</a><a href="terms.html">Điều khoản</a></nav>
+  <nav><a href="privacy-policy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav>
 </header>
 <main>
-<h1>Chính sách quyền riêng tư</h1>
-<p class="updated">Cập nhật lần cuối: 17/10/2026</p>
-<p class="note">Bản nháp từ template, cần được [PUBLISHER_NAME] xem xét trước khi phát hành.</p>
-<p>Charge Visuals (gói com.qz.chargevisualswallpapers) do [PUBLISHER_NAME] phát hành. Chính sách này giải thích ứng dụng xử lý dữ liệu gì, vì sao, và những bên thứ ba nào tham gia.</p>
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: October 17, 2026</p>
+<p class="note">Draft based on a template. It must be reviewed by [PUBLISHER_NAME] before release.</p>
+<p>Charge Visuals (package com.qz.chargevisualswallpapers) is published by [PUBLISHER_NAME] ("we", "us"). This Privacy Policy explains what data the app processes, why it does so, and which third parties are involved.</p>
 
-<h2>1. Tóm tắt</h2>
+<h2>1. Summary</h2>
 <ul>
-<li>Không có tài khoản: bạn không cần đăng ký hay đăng nhập, chúng tôi không thu thập tên, email, số điện thoại hay danh bạ.</li>
-<li>Hiệu ứng đã tải, hiệu ứng bạn tự tạo, yêu thích và cài đặt được lưu trong bộ nhớ riêng của ứng dụng trên máy, không tải lên máy chủ của chúng tôi.</li>
-<li>Video, ảnh bạn dùng để tạo hiệu ứng được lấy qua bộ chọn ảnh của Android (Photo Picker): ứng dụng chỉ nhận đúng file bạn chọn và không xin quyền đọc toàn bộ ảnh, video trong máy. File được xử lý ngay trên máy.</li>
-<li>Mức pin và trạng thái sạc chỉ được đọc trên máy để hiển thị trên màn sạc và báo pin đầy; ứng dụng không gửi các thông tin này đi.</li>
-<li>Ứng dụng có quảng cáo, phân tích, báo lỗi và mua trong ứng dụng thông qua các SDK bên thứ ba nêu ở mục 4. Chúng tôi không bán dữ liệu cá nhân của bạn.</li>
+<li>No accounts: you do not need to sign up or log in, and we do not collect your name, email address, phone number or contacts.</li>
+<li>Downloaded effects, effects you create, your favorites and your settings are stored in the app's private storage on your device and are not uploaded to our servers.</li>
+<li>Videos and photos you use to create effects are obtained through the Android Photo Picker: the app receives only the files you select and does not request permission to read all photos and videos on your device. These files are processed on your device.</li>
+<li>Battery level and charging status are read on your device only, to display them on the charging screen and to alert you when the battery is full; the app does not transmit this information.</li>
+<li>The app includes advertising, analytics, crash reporting and in-app purchases provided through the third-party SDKs listed in Section 4. We do not sell your personal data.</li>
 </ul>
 
-<h2>2. Quyền ứng dụng sử dụng</h2>
+<h2>2. Permissions the app uses</h2>
 <div class="scroll"><table>
-<tr><th>Quyền</th><th>Mục đích</th></tr>
-<tr><td>SYSTEM_ALERT_WINDOW (hiện trên ứng dụng khác)</td><td>Mở màn sạc toàn màn hình khi bạn cắm sạc, kể cả lúc máy đang khóa. Ứng dụng không đọc hay ghi lại nội dung của ứng dụng khác. Bạn bật quyền này trong cài đặt hệ thống và có thể tắt bất cứ lúc nào; khi tắt, màn sạc không tự hiện.</td></tr>
-<tr><td>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS (bỏ tối ưu pin)</td><td>Xin bạn cho phép dịch vụ nghe sự kiện cắm, rút sạc chạy nền mà không bị hệ thống tắt. Bạn có thể từ chối hoặc đổi lại trong cài đặt pin.</td></tr>
-<tr><td>FOREGROUND_SERVICE, FOREGROUND_SERVICE_SPECIAL_USE</td><td>Dịch vụ nền nhận sự kiện cắm và rút sạc để mở, đóng màn sạc. Dịch vụ luôn có một thông báo hiển thị mức pin và hiệu ứng đang dùng.</td></tr>
-<tr><td>POST_NOTIFICATIONS</td><td>Hiện thông báo của dịch vụ nền, nhắc bật lại quyền khi bị tắt, và thông báo đẩy qua Firebase Cloud Messaging. Không bắt buộc; bạn có thể từ chối hoặc tắt trong cài đặt hệ thống.</td></tr>
-<tr><td>RECEIVE_BOOT_COMPLETED</td><td>Khởi động lại dịch vụ nền sau khi bật máy hoặc sau khi ứng dụng được cập nhật, để màn sạc vẫn hoạt động.</td></tr>
-<tr><td>SET_WALLPAPER</td><td>Đặt hình nền tĩnh cho màn hình chính, màn khóa hoặc cả hai khi bạn chọn. Hình nền động dùng dịch vụ hình nền của ứng dụng và bạn xác nhận trong màn chọn hình nền của Android.</td></tr>
-<tr><td>VIBRATE</td><td>Rung khi pin đầy nếu bạn bật tùy chọn này.</td></tr>
-<tr><td>INTERNET, ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE</td><td>Tải danh mục và file hiệu ứng, hình nền, cấu hình; hiển thị quảng cáo; gửi phân tích và báo lỗi; kiểm tra kết nối để báo khi đang ngoại tuyến.</td></tr>
-<tr><td>WAKE_LOCK</td><td>Do Firebase và SDK quảng cáo khai báo: giữ máy thức trong thời gian ngắn khi xử lý công việc nền.</td></tr>
-<tr><td>AD_ID, ACCESS_ADSERVICES_* (Privacy Sandbox), com.amazon.privacypass.ATTEST</td><td>Do SDK quảng cáo và đo lường khai báo: đọc mã định danh quảng cáo, đo lường, phân bổ quảng cáo và chống gian lận quảng cáo.</td></tr>
-<tr><td>BIND_GET_INSTALL_REFERRER_SERVICE</td><td>Đọc nguồn giới thiệu cài đặt từ Google Play để đo lường nguồn cài đặt (Adjust, Firebase).</td></tr>
-<tr><td>com.google.android.c2dm.permission.RECEIVE</td><td>Nhận thông báo đẩy qua Firebase Cloud Messaging.</td></tr>
-<tr><td>BILLING, CHECK_LICENSE</td><td>Mua gói Premium và kiểm tra quyền lợi qua Google Play.</td></tr>
+<tr><th>Permission</th><th>Purpose</th></tr>
+<tr><td>SYSTEM_ALERT_WINDOW (display over other apps)</td><td>Opens the full-screen charging screen when you plug in your charger, including while the device is locked. The app does not read or record the content of other apps. You grant this permission in system settings and may revoke it at any time; if revoked, the charging screen will not appear automatically.</td></tr>
+<tr><td>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS (ignore battery optimization)</td><td>Asks your permission to let the background service that listens for plug and unplug events run without being stopped by the system. You may decline or change this later in battery settings.</td></tr>
+<tr><td>FOREGROUND_SERVICE, FOREGROUND_SERVICE_SPECIAL_USE</td><td>Runs a background service that receives plug and unplug events to open and close the charging screen. The service always shows a notification with the battery level and the active effect.</td></tr>
+<tr><td>POST_NOTIFICATIONS</td><td>Shows the background service notification, reminders to re-enable a permission that has been turned off, and push notifications via Firebase Cloud Messaging. Optional; you may decline or turn notifications off in system settings.</td></tr>
+<tr><td>RECEIVE_BOOT_COMPLETED</td><td>Restarts the background service after the device boots or the app is updated, so the charging screen keeps working.</td></tr>
+<tr><td>SET_WALLPAPER</td><td>Sets a still wallpaper on the home screen, the lock screen or both, when you choose to do so. Live wallpapers use the app's wallpaper service and are confirmed by you in the Android wallpaper picker.</td></tr>
+<tr><td>VIBRATE</td><td>Vibrates when the battery is full, if you turn this option on.</td></tr>
+<tr><td>INTERNET, ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE</td><td>Downloads the catalog and files for effects, wallpapers and configuration; displays ads; sends analytics and crash reports; checks connectivity so the app can tell you when you are offline.</td></tr>
+<tr><td>WAKE_LOCK</td><td>Declared by Firebase and the advertising SDKs: keeps the device awake briefly while background work is processed.</td></tr>
+<tr><td>AD_ID, ACCESS_ADSERVICES_* (Privacy Sandbox), com.amazon.privacypass.ATTEST</td><td>Declared by the advertising and measurement SDKs: reads the advertising ID and supports ad measurement, attribution and ad fraud prevention.</td></tr>
+<tr><td>BIND_GET_INSTALL_REFERRER_SERVICE</td><td>Reads the install referrer from Google Play to measure where installs come from (Adjust, Firebase).</td></tr>
+<tr><td>com.google.android.c2dm.permission.RECEIVE</td><td>Receives push notifications via Firebase Cloud Messaging.</td></tr>
+<tr><td>BILLING, CHECK_LICENSE</td><td>Purchases the Premium plan and verifies entitlements through Google Play.</td></tr>
 </table></div>
-<p>Ứng dụng không xin quyền camera, microphone, vị trí, danh bạ, đọc ảnh và video (READ_MEDIA_*), ghi bộ nhớ hay sửa cài đặt hệ thống (WRITE_SETTINGS). Âm báo pin đầy được chọn qua bộ chọn chuông có sẵn của Android.</p>
+<p>The app does not request access to your camera, microphone, location, contacts, photos and videos (READ_MEDIA_*), external storage, or system settings (WRITE_SETTINGS). The full-battery alert sound is chosen through Android's built-in ringtone picker.</p>
 
-<h2>3. Dữ liệu chúng tôi và các SDK có thể xử lý</h2>
+<h2>3. Data we and the SDKs may process</h2>
 <div class="scroll"><table>
-<tr><th>Dữ liệu</th><th>Mục đích</th><th>Bên xử lý</th></tr>
-<tr><td>Hiệu ứng đã tải, hiệu ứng tự tạo từ video hoặc ảnh bạn chọn, danh sách yêu thích</td><td>Hiển thị trong Thư viện, dùng làm màn sạc hoặc hình nền</td><td>Chỉ trên thiết bị</td></tr>
-<tr><td>Cài đặt màn sạc, chế độ đêm, báo pin đầy, ngôn ngữ</td><td>Ghi nhớ lựa chọn của bạn</td><td>Chỉ trên thiết bị</td></tr>
-<tr><td>Mức pin, trạng thái sạc, trạng thái màn hình</td><td>Hiển thị phần trăm pin, đóng màn sạc khi rút dây, chế độ "chỉ hiện khi màn hình tắt"</td><td>Chỉ trên thiết bị</td></tr>
-<tr><td>Địa chỉ IP và thông tin kết nối (user agent) của thiết bị khi tải nội dung</td><td>Tải danh mục và file hiệu ứng, hình nền (nội dung được lưu trên GitHub)</td><td>GitHub</td></tr>
-<tr><td>Mã định danh quảng cáo (Advertising ID), địa chỉ IP và vị trí gần đúng suy ra từ IP, thông tin thiết bị, tương tác quảng cáo</td><td>Hiển thị, đo hiệu quả quảng cáo và chống gian lận</td><td>Google AdMob và các mạng quảng cáo qua mediation nêu ở mục 4</td></tr>
-<tr><td>Lựa chọn đồng ý quảng cáo (ở khu vực yêu cầu)</td><td>Hỏi và lưu sự đồng ý cho quảng cáo cá nhân hóa</td><td>Google User Messaging Platform</td></tr>
-<tr><td>Sự kiện sử dụng (màn đã xem, lượt chia sẻ), thông tin thiết bị, mã định danh ứng dụng</td><td>Phân tích sử dụng và cải thiện ứng dụng</td><td>Firebase Analytics</td></tr>
-<tr><td>Báo cáo sự cố, trạng thái thiết bị khi lỗi</td><td>Phát hiện và sửa lỗi</td><td>Firebase Crashlytics</td></tr>
-<tr><td>Cấu hình từ xa, thông tin thiết bị</td><td>Bật, tắt tính năng, cập nhật nội dung mà không cần bản mới</td><td>Firebase Remote Config</td></tr>
-<tr><td>Token thiết bị</td><td>Gửi thông báo đẩy</td><td>Firebase Cloud Messaging</td></tr>
-<tr><td>Mã định danh quảng cáo, nguồn cài đặt, sự kiện cài đặt và quảng cáo</td><td>Đo lường nguồn cài đặt và hiệu quả quảng cáo</td><td>Adjust</td></tr>
-<tr><td>Mã định danh quảng cáo, sự kiện ứng dụng</td><td>Đo lường quảng cáo và phân bổ cài đặt</td><td>Facebook (Meta) SDK</td></tr>
-<tr><td>Thông tin giao dịch (do Google xử lý; chúng tôi không nhận số thẻ)</td><td>Mua trong ứng dụng, khôi phục và kiểm tra quyền lợi</td><td>Google Play Billing</td></tr>
-<tr><td>Lượt đánh giá trong ứng dụng</td><td>Hiện hộp đánh giá của Google Play khi bạn chọn đánh giá</td><td>Google Play In-App Review</td></tr>
+<tr><th>Data</th><th>Purpose</th><th>Processed by</th></tr>
+<tr><td>Downloaded effects, effects you create from videos or photos you select, your favorites list</td><td>Displaying them in your Library and using them as a charging screen or wallpaper</td><td>On your device only</td></tr>
+<tr><td>Charging screen settings, night mode, full-battery alert, language</td><td>Remembering your choices</td><td>On your device only</td></tr>
+<tr><td>Battery level, charging status, screen state</td><td>Showing the battery percentage, closing the charging screen when you unplug, and the "only show when the screen is off" option</td><td>On your device only</td></tr>
+<tr><td>Your device's IP address and connection information (user agent) when content is downloaded</td><td>Downloading the catalog and files for effects and wallpapers (content is hosted on GitHub)</td><td>GitHub</td></tr>
+<tr><td>Advertising ID, IP address and approximate location inferred from it, device information, ad interactions</td><td>Serving ads, measuring ad performance and preventing fraud</td><td>Google AdMob and the mediation ad networks listed in Section 4</td></tr>
+<tr><td>Your ad consent choices (in regions where consent is required)</td><td>Requesting and storing your consent to personalized ads</td><td>Google User Messaging Platform</td></tr>
+<tr><td>Usage events (screens viewed, shares), device information, app instance identifiers</td><td>Usage analytics and improving the app</td><td>Firebase Analytics</td></tr>
+<tr><td>Crash reports and device state at the time of a crash</td><td>Detecting and fixing bugs</td><td>Firebase Crashlytics</td></tr>
+<tr><td>Remote configuration, device information</td><td>Turning features on or off and updating content without a new app release</td><td>Firebase Remote Config</td></tr>
+<tr><td>Device token</td><td>Sending push notifications</td><td>Firebase Cloud Messaging</td></tr>
+<tr><td>Advertising ID, install referrer, install and ad events</td><td>Measuring install sources and ad performance</td><td>Adjust</td></tr>
+<tr><td>Advertising ID, app events</td><td>Ad measurement and install attribution</td><td>Facebook (Meta) SDK</td></tr>
+<tr><td>Transaction information (processed by Google; we never receive your card number)</td><td>In-app purchases, restoring purchases and verifying entitlements</td><td>Google Play Billing</td></tr>
+<tr><td>In-app review requests</td><td>Showing the Google Play review dialog when you choose to rate the app</td><td>Google Play In-App Review</td></tr>
 </table></div>
-<p>Khi bạn chia sẻ một hiệu ứng, file video được chuyển tới ứng dụng bạn chọn trong bảng chia sẻ của Android; việc xử lý sau đó theo chính sách của ứng dụng đó. Nếu bạn bật sao lưu của Android, hệ thống có thể sao lưu dữ liệu ứng dụng vào tài khoản Google của bạn theo cài đặt sao lưu của máy.</p>
+<p>When you share an effect, the video file is passed to the app you select in the Android share sheet; any further processing is governed by that app's policies. If Android backup is enabled, the system may back up app data to your Google account according to your device's backup settings.</p>
 
-<h2>4. SDK và dịch vụ bên thứ ba</h2>
+<h2>4. Third-party SDKs and services</h2>
 <ul>
-<li>Google Mobile Ads (AdMob) và Google User Messaging Platform: <a href="https://policies.google.com/privacy">chính sách Google</a></li>
-<li>Các mạng quảng cáo qua mediation của AdMob: AppLovin (<a href="https://legal.applovin.com/privacy/">chính sách AppLovin</a>), Meta Audience Network (<a href="https://www.facebook.com/privacy/policy/">chính sách Meta</a>), InMobi (<a href="https://advertising.inmobi.com/privacy-policy">chính sách InMobi</a>), Mintegral (<a href="https://www.mintegral.com/en/privacy">chính sách Mintegral</a>), Moloco (<a href="https://www.moloco.com/terms-and-policies/privacy-portal">chính sách Moloco</a>), Pangle (<a href="https://www.pangleglobal.com/privacy">chính sách Pangle</a>), Unity Ads (<a href="https://unity.com/legal/privacy-policy">chính sách Unity</a>), Liftoff Vungle (<a href="https://liftoff.ai/privacy-policy/">chính sách Liftoff</a>)</li>
-<li>Firebase (Analytics, Crashlytics, Remote Config, Cloud Messaging): <a href="https://firebase.google.com/support/privacy">chính sách Firebase</a></li>
-<li>Adjust: <a href="https://www.adjust.com/terms/privacy-policy/">chính sách Adjust</a></li>
-<li>Facebook SDK (Meta): <a href="https://www.facebook.com/privacy/policy/">chính sách Meta</a></li>
-<li>Google Play Billing và Google Play In-App Review: <a href="https://policies.google.com/privacy">chính sách Google</a></li>
-<li>GitHub (lưu trữ danh mục và file nội dung): <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">tuyên bố quyền riêng tư GitHub</a></li>
+<li>Google Mobile Ads (AdMob) and Google User Messaging Platform: <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+<li>Ad networks used through AdMob mediation: AppLovin (<a href="https://legal.applovin.com/privacy/">AppLovin Privacy Policy</a>), Meta Audience Network (<a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a>), InMobi (<a href="https://advertising.inmobi.com/privacy-policy">InMobi Privacy Policy</a>), Mintegral (<a href="https://www.mintegral.com/en/privacy">Mintegral Privacy Policy</a>), Moloco (<a href="https://www.moloco.com/terms-and-policies/privacy-portal">Moloco Privacy Policy</a>), Pangle (<a href="https://www.pangleglobal.com/privacy">Pangle Privacy Policy</a>), Unity Ads (<a href="https://unity.com/legal/privacy-policy">Unity Privacy Policy</a>), Liftoff Vungle (<a href="https://liftoff.ai/privacy-policy/">Liftoff Privacy Policy</a>)</li>
+<li>Firebase (Analytics, Crashlytics, Remote Config, Cloud Messaging): <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a></li>
+<li>Adjust: <a href="https://www.adjust.com/terms/privacy-policy/">Adjust Privacy Policy</a></li>
+<li>Facebook SDK (Meta): <a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a></li>
+<li>Google Play Billing and Google Play In-App Review: <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+<li>GitHub (hosting of the content catalog and files): <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a></li>
 </ul>
 
-<h2>5. Quyền của bạn</h2>
-<p>Bạn có thể: đặt lại hoặc xóa mã định danh quảng cáo, hoặc chọn không nhận quảng cáo cá nhân hóa trong Cài đặt Android (Google, Quảng cáo); thu hồi quyền hiện trên ứng dụng khác, bỏ tối ưu pin hoặc thông báo trong cài đặt hệ thống; xóa hiệu ứng đã tải và hiệu ứng tự tạo trong Thư viện của ứng dụng; xóa dữ liệu ứng dụng hoặc gỡ cài đặt để xóa toàn bộ dữ liệu cục bộ. Tùy nơi cư trú, bạn có thể có quyền truy cập, chỉnh sửa, xóa dữ liệu hoặc rút lại sự đồng ý; vui lòng liên hệ theo mục 9.</p>
+<h2>5. Your rights and choices</h2>
+<p>You can: reset or delete your advertising ID, or opt out of personalized ads, in Android Settings (Google, Ads); revoke the display-over-other-apps, battery optimization or notification permissions in system settings; delete downloaded and self-made effects in the app's Library; and clear the app's data or uninstall the app to remove all locally stored data. Depending on where you live, you may have the right to access, correct or delete your data, or to withdraw your consent; to exercise these rights, contact us as described in Section 9.</p>
 
-<h2>6. Trẻ em</h2>
-<p>Ứng dụng không nhắm tới trẻ dưới 13 tuổi và chúng tôi không cố ý thu thập dữ liệu của trẻ em.</p>
+<h2>6. Children</h2>
+<p>The app is not directed to children under 13, and we do not knowingly collect personal data from children.</p>
 
-<h2>7. Lưu trữ và bảo mật</h2>
-<p>Dữ liệu gửi tới dịch vụ bên thứ ba được truyền qua HTTPS. Dữ liệu do các bên thứ ba thu thập được lưu và xử lý theo chính sách của họ.</p>
+<h2>7. Storage and security</h2>
+<p>Data sent to third-party services is transmitted over HTTPS. Data collected by third parties is stored and processed in accordance with their own privacy policies.</p>
 
-<h2>8. Thay đổi chính sách</h2>
-<p>Chúng tôi có thể cập nhật chính sách này; bản mới được đăng trên trang này kèm ngày cập nhật.</p>
+<h2>8. Changes to this policy</h2>
+<p>We may update this Privacy Policy from time to time. The updated version will be posted on this page with a new "Last updated" date.</p>
 
-<h2>9. Liên hệ</h2>
+<h2>9. Contact us</h2>
 <p>[PUBLISHER_NAME]: <a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a></p>
 </main>
-<footer>© 2026 [PUBLISHER_NAME]. Liên hệ: <a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a></footer>
+<footer>© 2026 [PUBLISHER_NAME]. Contact: <a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a></footer>
 </body>
 </html>

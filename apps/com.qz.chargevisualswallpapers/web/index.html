@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Charge Visuals: hiệu ứng sạc pin trên màn khóa</title>
-<meta name="description" content="Cắm sạc là màn khóa hiện hiệu ứng sạc pin toàn màn hình, đồng hồ số to và phần trăm pin. Kèm hình nền động, hình nền tĩnh và tạo hiệu ứng từ video của bạn.">
+<title>Charge Visuals: charging animations on your lock screen</title>
+<meta name="description" content="Plug in and your lock screen shows a full-screen charging animation, a big clock and your battery percentage. Plus live wallpapers, still wallpapers and effects made from your own videos.">
 <meta name="theme-color" content="#0E0F12">
 <link rel="icon" href="img/icon-96.png">
 <link rel="preload" href="fonts/Unbounded.woff2" as="font" type="font/woff2" crossorigin>
@@ -25,44 +25,44 @@
 <header class="bar">
   <a class="wordmark" href="index.html"><img src="img/icon-96.png" width="32" height="32" alt="">Charge Visuals</a>
   <nav>
-    <a href="#cach-dung">Cách dùng</a>
-    <a href="#kho">Hiệu ứng</a>
-    <a href="privacy-policy.html">Quyền riêng tư</a>
-    <a href="terms.html">Điều khoản</a>
+    <a href="#how">How it works</a>
+    <a href="#effects">Effects</a>
+    <a href="privacy-policy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
   </nav>
 </header>
 
 <main>
 <section class="hero">
   <div class="hero__copy">
-    <h1 data-rise style="--i:0">Cắm sạc là<br>màn khóa sáng</h1>
-    <p data-rise style="--i:1">Hiệu ứng sạc pin toàn màn hình, đồng hồ số to và phần trăm pin hiện ngay trên màn khóa. Rút dây là tắt.</p>
-    <a data-rise style="--i:2" class="button" href="https://play.google.com/store/apps/details?id=com.qz.chargevisualswallpapers">Tải trên Google Play</a>
+    <h1 data-rise style="--i:0">Plug in.<br>Light up.</h1>
+    <p data-rise style="--i:1">A full-screen charging animation, a big clock and your battery percentage, right on the lock screen. Unplug and it’s gone.</p>
+    <a data-rise style="--i:2" class="button" href="https://play.google.com/store/apps/details?id=com.qz.chargevisualswallpapers">Get it on Google Play</a>
   </div>
   <div class="shutter" data-reveal>
    <div class="stage">
     <div class="hero-ui">
       <fieldset class="picker" data-ui>
-        <legend>Kiểu đồng hồ</legend>
+        <legend>Clock style</legend>
         <label class="opt"><input type="radio" name="clock" value="volt" checked><span class="opt__tile mini-volt" data-clock>23:41</span><span>Volt</span></label>
-        <label class="opt"><input type="radio" name="clock" value="thin"><span class="opt__tile mini-thin" data-clock>23:41</span><span>Mảnh</span></label>
-        <label class="opt"><input type="radio" name="clock" value="stack"><span class="opt__tile mini-stack" data-clock-stack>23<br>41</span><span>Xếp chồng</span></label>
-        <p class="picker__note">Đồng hồ đang chạy theo giờ máy bạn. Mở trang trên điện thoại đang cắm sạc để thấy mức pin thật.</p>
+        <label class="opt"><input type="radio" name="clock" value="thin"><span class="opt__tile mini-thin" data-clock>23:41</span><span>Thin</span></label>
+        <label class="opt"><input type="radio" name="clock" value="stack"><span class="opt__tile mini-stack" data-clock-stack>23<br>41</span><span>Stacked</span></label>
+        <p class="picker__note">The clock runs on your device’s time. Open this page on a phone that’s charging to see its real battery level.</p>
       </fieldset>
-      <div class="charge" aria-label="Màn sạc của Charge Visuals">
+      <div class="charge" aria-label="Charge Visuals charging screen">
         <video class="charge__media" autoplay muted loop playsinline preload="auto" poster="img/hero-a013.webp" width="720" height="1280" aria-hidden="true">
           <source src="img/hero-a013.mp4" type="video/mp4">
         </video>
         <div class="charge__top" data-ui>
           <p class="charge__clock" data-clock>23:41</p>
           <p class="charge__clock-stack" data-clock-stack>23<br>41</p>
-          <p class="charge__date" data-date>Thứ Bảy, 17 tháng 10</p>
+          <p class="charge__date" data-date>Saturday, October 17</p>
         </div>
         <div class="charge__bottom" data-ui>
           <p class="charge__pct"><span data-level>84</span>%</p>
           <span class="charge__track"><span class="charge__fill" data-fill style="--level:84%"></span></span>
-          <p class="charge__state"><svg><use href="#i-bolt"/></svg><span data-state>Sạc nhanh · đầy sau 25 phút</span></p>
-          <p class="charge__hint">Chạm 2 lần để đóng</p>
+          <p class="charge__state"><svg><use href="#i-bolt"/></svg><span data-state>Fast charging · full in 25 min</span></p>
+          <p class="charge__hint">Double-tap to close</p>
         </div>
       </div>
     </div>
@@ -71,79 +71,79 @@
 </section>
 
 <section class="showcase" aria-labelledby="ready-h">
-  <h2 id="ready-h" data-reveal>Biết chắc nó sẽ chạy</h2>
+  <h2 id="ready-h" data-reveal>Know it will work</h2>
   <div class="states">
-    <p class="state-word" data-reveal>Mới cài</p>
+    <p class="state-word" data-reveal>Just installed</p>
     <div class="ready" data-ui data-reveal>
       <div class="ready__top">
-        <img class="ready__mini" src="img/thumb-a015.webp" width="240" height="427" alt="Hiệu ứng Pulse Ring">
+        <img class="ready__mini" src="img/thumb-a015.webp" width="240" height="427" alt="Pulse Ring effect">
         <div>
-          <p class="ready__kicker">Chưa sẵn sàng · 0/3</p>
-          <p class="ready__title">Còn 3 bước để hiện khi cắm sạc</p>
+          <p class="ready__kicker">Not ready · 0/3</p>
+          <p class="ready__title">3 steps left to show on charge</p>
           <span class="steps"><i></i><i></i><i></i></span>
         </div>
       </div>
-      <div class="perm"><span class="perm__st no">!</span><span class="perm__txt"><b>Hiện trên ứng dụng khác</b>Để mở màn sạc khi máy đang khóa</span><span class="chip-btn">Bật</span></div>
-      <div class="perm"><span class="perm__st no">!</span><span class="perm__txt"><b>Bỏ tối ưu pin</b>Để Android không tắt dịch vụ chạy nền</span><span class="chip-btn">Bật</span></div>
-      <div class="perm"><span class="perm__st no">!</span><span class="perm__txt"><b>Thông báo</b>Hiện mức pin, không bắt buộc</span><span class="chip-btn">Bật</span></div>
+      <div class="perm"><span class="perm__st no">!</span><span class="perm__txt"><b>Display over other apps</b>Opens the charging screen while the phone is locked</span><span class="chip-btn">Allow</span></div>
+      <div class="perm"><span class="perm__st no">!</span><span class="perm__txt"><b>Ignore battery optimization</b>Keeps Android from stopping the background service</span><span class="chip-btn">Allow</span></div>
+      <div class="perm"><span class="perm__st no">!</span><span class="perm__txt"><b>Notifications</b>Shows battery level, optional</span><span class="chip-btn">Allow</span></div>
     </div>
 
-    <p class="state-word" data-reveal>Một chạm</p>
+    <p class="state-word" data-reveal>One tap</p>
     <div class="ready ready--live" data-ui data-reveal id="ready-live">
       <div class="ready__top">
-        <img class="ready__mini" src="img/thumb-a015.webp" width="240" height="427" alt="Hiệu ứng Pulse Ring">
+        <img class="ready__mini" src="img/thumb-a015.webp" width="240" height="427" alt="Pulse Ring effect">
         <div>
-          <p class="ready__kicker" data-ready-kicker>Chưa sẵn sàng · 2/3</p>
-          <p class="ready__title" data-ready-title>Còn 1 bước để hiện khi cắm sạc</p>
+          <p class="ready__kicker" data-ready-kicker>Not ready · 2/3</p>
+          <p class="ready__title" data-ready-title>1 step left to show on charge</p>
           <span class="steps"><i class="on"></i><i class="on"></i><i data-ready-step></i></span>
         </div>
       </div>
-      <div class="perm"><span class="perm__st no" data-ready-st>!</span><span class="perm__txt"><b>Hiện trên ứng dụng khác</b>Để mở màn sạc khi máy đang khóa</span><button type="button" class="chip-btn chip-btn--on" data-ready-btn>Bật</button></div>
-      <div class="perm"><span class="perm__st ok"><svg><use href="#i-check"/></svg></span><span class="perm__txt"><b>Bỏ tối ưu pin</b>Để Android không tắt dịch vụ chạy nền</span><span class="chip-done">Đã bật</span></div>
-      <div class="perm"><span class="perm__st ok"><svg><use href="#i-check"/></svg></span><span class="perm__txt"><b>Thông báo</b>Hiện mức pin, không bắt buộc</span><span class="chip-done">Đã bật</span></div>
+      <div class="perm"><span class="perm__st no" data-ready-st>!</span><span class="perm__txt"><b>Display over other apps</b>Opens the charging screen while the phone is locked</span><button type="button" class="chip-btn chip-btn--on" data-ready-btn>Allow</button></div>
+      <div class="perm"><span class="perm__st ok"><svg><use href="#i-check"/></svg></span><span class="perm__txt"><b>Ignore battery optimization</b>Keeps Android from stopping the background service</span><span class="chip-done">Allowed</span></div>
+      <div class="perm"><span class="perm__st ok"><svg><use href="#i-check"/></svg></span><span class="perm__txt"><b>Notifications</b>Shows battery level, optional</span><span class="chip-done">Allowed</span></div>
     </div>
 
-    <p class="state-word" data-reveal>Sẵn sàng</p>
+    <p class="state-word" data-reveal>Ready</p>
     <div class="ready ready--ok" data-ui data-reveal>
       <div class="ready__top">
-        <img class="ready__mini" src="img/thumb-a015.webp" width="240" height="427" alt="Hiệu ứng Pulse Ring">
+        <img class="ready__mini" src="img/thumb-a015.webp" width="240" height="427" alt="Pulse Ring effect">
         <div>
-          <p class="ready__kicker ready__kicker--ok"><i class="dot"></i>Sẵn sàng</p>
+          <p class="ready__kicker ready__kicker--ok"><i class="dot"></i>Ready</p>
           <p class="ready__title">Pulse Ring</p>
-          <p class="ready__sub">Cắm sạc là hiện, kể cả khi khóa máy</p>
-          <span class="ready__acts"><span class="pill"><svg><use href="#i-play"/></svg>Thử ngay</span><span class="ready__link">Tùy chỉnh</span></span>
+          <p class="ready__sub">Shows when you plug in, even when locked</p>
+          <span class="ready__acts"><span class="pill"><svg><use href="#i-play"/></svg>Try it</span><span class="ready__link">Customize</span></span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="how" id="cach-dung" aria-labelledby="how-h">
+<section class="how" id="how" aria-labelledby="how-h">
   <div class="how__text">
-    <h2 id="how-h" data-reveal>Ba bước, một lần</h2>
+    <h2 id="how-h" data-reveal>Three steps, once</h2>
     <div class="how__step is-active" data-step="pick">
-      <p class="how__say">Chọn một hiệu ứng.</p>
-      <p>Hơn 100 hiệu ứng trong các nhóm Vòng sạc, Tia điện, Neon, Hạt sáng, Dễ thương. Xem trước toàn màn hình trước khi áp dụng.</p>
+      <p class="how__say">Pick an effect.</p>
+      <p>Over 100 effects across Charge Rings, Lightning, Neon, Particles and Cute. Preview any of them full screen before you apply it.</p>
     </div>
     <div class="how__step" data-step="tune">
-      <p class="how__say">Rồi chỉnh theo ý bạn.</p>
-      <p>Thời lượng từ 10 giây đến luôn hiện, đóng bằng một chạm, hai chạm hoặc chỉ khi rút sạc. Ảnh phía sau đổi ngay khi bạn chọn.</p>
+      <p class="how__say">Make it yours.</p>
+      <p>Show it for 10 seconds or keep it on. Close with a tap, a double-tap or only when you unplug. The preview behind updates as you choose.</p>
     </div>
     <div class="how__step" data-step="plug">
-      <p class="how__say">Cắm sạc là thấy.</p>
-      <p>Màn sạc hiện trên màn khóa mà không mở khóa máy. Rút dây là tắt và bạn quay về đúng màn khóa cũ.</p>
+      <p class="how__say">Plug in and watch.</p>
+      <p>The charging screen appears over the lock screen without unlocking your phone. Unplug and you’re back to your usual lock screen.</p>
     </div>
   </div>
   <div class="how__stage" data-how="pick">
     <div class="how-ui" data-ui>
       <div class="how-ui__pick">
-        <p class="how-ui__head">Vòng sạc <span>Xem tất cả</span></p>
+        <p class="how-ui__head">Charge Rings <span>See all</span></p>
         <div class="how-ui__grid">
           <figure class="sel"><img src="img/thumb-a015.webp" width="240" height="427" alt=""><figcaption>Pulse Ring</figcaption></figure>
           <figure><img src="img/thumb-a017.webp" width="240" height="427" alt=""><figcaption>Triple Dash</figcaption></figure>
           <figure><img src="img/thumb-a016.webp" width="240" height="427" alt=""><figcaption>Plasma Orb</figcaption></figure>
         </div>
-        <p class="how-ui__head">Tia điện <span>Xem tất cả</span></p>
+        <p class="how-ui__head">Lightning <span>See all</span></p>
         <div class="how-ui__grid">
           <figure><img src="img/thumb-a030.webp" width="240" height="427" alt=""><figcaption>Forked Bolt</figcaption></figure>
           <figure><img src="img/thumb-a035.webp" width="240" height="427" alt=""><figcaption>Energy Orb</figcaption></figure>
@@ -151,86 +151,86 @@
         </div>
       </div>
       <div class="how-ui__tune">
-        <p class="how-ui__title">Tùy chỉnh màn sạc</p>
-        <p class="how-ui__label">Thời lượng</p>
-        <p class="chips"><span class="chip">10 giây</span><span class="chip sel"><svg><use href="#i-check"/></svg>30 giây</span><span class="chip">1 phút</span><span class="chip">Luôn hiện</span></p>
-        <p class="how-ui__label">Đóng bằng</p>
-        <p class="chips"><span class="chip">Chạm 1 lần</span><span class="chip sel"><svg><use href="#i-check"/></svg>Chạm 2 lần</span><span class="chip">Chỉ khi rút sạc</span></p>
-        <p class="how-ui__label">Hiển thị</p>
-        <p class="chips"><span class="chip sel"><svg><use href="#i-check"/></svg>Giờ</span><span class="chip sel"><svg><use href="#i-check"/></svg>Ngày</span><span class="chip sel"><svg><use href="#i-check"/></svg>% pin</span><span class="chip">24 giờ</span></p>
-        <span class="how-ui__done">Xong</span>
+        <p class="how-ui__title">Customize charging screen</p>
+        <p class="how-ui__label">Duration</p>
+        <p class="chips"><span class="chip">10 sec</span><span class="chip sel"><svg><use href="#i-check"/></svg>30 sec</span><span class="chip">1 min</span><span class="chip">Always on</span></p>
+        <p class="how-ui__label">Close with</p>
+        <p class="chips"><span class="chip">Tap</span><span class="chip sel"><svg><use href="#i-check"/></svg>Double-tap</span><span class="chip">Unplug only</span></p>
+        <p class="how-ui__label">Show</p>
+        <p class="chips"><span class="chip sel"><svg><use href="#i-check"/></svg>Time</span><span class="chip sel"><svg><use href="#i-check"/></svg>Date</span><span class="chip sel"><svg><use href="#i-check"/></svg>Battery %</span><span class="chip">24-hour</span></p>
+        <span class="how-ui__done">Done</span>
       </div>
       <div class="how-ui__plug">
-        <img src="img/screen-charging.webp" width="520" height="923" alt="Màn sạc thật của ứng dụng: tia sét, đồng hồ 06:12, pin 84%">
+        <img src="img/screen-charging.webp" width="520" height="923" alt="The app’s charging screen: a lightning bolt, clock at 06:12, battery at 84%">
       </div>
     </div>
   </div>
 </section>
 
-<section class="features" aria-label="Tùy chọn trong Cài đặt">
+<section class="features" aria-label="Options in Settings">
   <div data-reveal class="band band--olive">
-    <p class="band__say">Chế độ đêm làm dịu màn sạc</p>
-    <p class="band__then">22:00 đến 06:00 · tối đi 60% · tự đóng sau 10 giây</p>
-    <button type="button" class="switch" role="switch" aria-checked="true" aria-label="Chế độ đêm" data-ui><span></span></button>
+    <p class="band__say">Night mode softens the charging screen</p>
+    <p class="band__then">10 PM to 6 AM · 60% dimmer · closes itself after 10 seconds</p>
+    <button type="button" class="switch" role="switch" aria-checked="true" aria-label="Night mode" data-ui><span></span></button>
   </div>
   <div data-reveal class="band band--steel">
-    <p class="band__say">Chỉ hiện khi màn hình đang tắt</p>
-    <p class="band__then">Đang xem video hay chơi game thì màn sạc không che</p>
-    <button type="button" class="switch" role="switch" aria-checked="false" aria-label="Chỉ hiện khi màn hình tắt" data-ui><span></span></button>
+    <p class="band__say">Only show when the screen is off</p>
+    <p class="band__then">Watching a video or playing a game? The charging screen stays out of the way</p>
+    <button type="button" class="switch" role="switch" aria-checked="false" aria-label="Only show when the screen is off" data-ui><span></span></button>
   </div>
   <div data-reveal class="band band--lime">
-    <p class="band__say">Báo cho bạn khi pin đầy 100%</p>
-    <p class="band__then">Âm báo chọn từ chuông có sẵn trong máy, rung tùy chọn</p>
-    <button type="button" class="switch" role="switch" aria-checked="true" aria-label="Báo pin đầy" data-ui><span></span></button>
+    <p class="band__say">Get an alert when you hit 100%</p>
+    <p class="band__then">Pick a sound from your phone’s ringtones, with optional vibration</p>
+    <button type="button" class="switch" role="switch" aria-checked="true" aria-label="Full battery alert" data-ui><span></span></button>
   </div>
   <div data-reveal class="band band--olive">
-    <p class="band__say">Dùng hiệu ứng làm hình nền động</p>
-    <p class="band__then">Một file, hai công dụng; có thêm hình nền tĩnh cho màn chính, màn khóa hoặc cả hai</p>
-    <button type="button" class="switch" role="switch" aria-checked="false" aria-label="Hình nền động" data-ui><span></span></button>
+    <p class="band__say">Use any effect as a live wallpaper</p>
+    <p class="band__then">One file, two jobs. Still wallpapers too, for the home screen, the lock screen or both</p>
+    <button type="button" class="switch" role="switch" aria-checked="false" aria-label="Live wallpaper" data-ui><span></span></button>
   </div>
   <div data-reveal class="band band--steel">
-    <p class="band__say">Tạo hiệu ứng từ video của bạn</p>
-    <p class="band__then">Chọn qua bộ chọn ảnh của Android, cắt tối đa 15 giây, xử lý ngay trên máy</p>
-    <button type="button" class="switch" role="switch" aria-checked="false" aria-label="Tạo từ video" data-ui><span></span></button>
+    <p class="band__say">Turn your own video into an effect</p>
+    <p class="band__then">Pick it with Android’s photo picker, trim up to 15 seconds, processed right on your phone</p>
+    <button type="button" class="switch" role="switch" aria-checked="false" aria-label="Create from video" data-ui><span></span></button>
   </div>
 </section>
 
-<section class="gallery" id="kho" aria-labelledby="kho-h">
-  <h2 id="kho-h" data-reveal>Trong kho hiệu ứng</h2>
+<section class="gallery" id="effects" aria-labelledby="effects-h">
+  <h2 id="effects-h" data-reveal>From the effects library</h2>
   <ul class="tiles">
-    <li class="tile" data-reveal><img src="img/tile-a030.webp" width="640" height="800" loading="lazy" alt="Hiệu ứng Forked Bolt: tia sét trắng tím trên nền đen"><div class="tile__strip"><p class="tile__row"><span>Tia điện</span><span>Video</span><span>3,0 giây</span><span>0,7 MB</span></p><p class="tile__row"><span>Premium</span><span>Màn sạc, hình nền</span></p><p class="tile__name">Forked Bolt</p></div></li>
-    <li class="tile" data-reveal><img src="img/tile-a044.webp" width="640" height="800" loading="lazy" alt="Hiệu ứng Radial Reactor: lõi máy phát sáng xanh giữa bánh răng"><div class="tile__strip"><p class="tile__row"><span>Cơ khí</span><span>Video</span><span>10 giây</span><span>1,5 MB</span></p><p class="tile__row"><span>Miễn phí</span><span>Màn sạc, hình nền</span></p><p class="tile__name">Radial Reactor</p></div></li>
-    <li class="tile" data-reveal><img src="img/tile-a017.webp" width="640" height="800" loading="lazy" alt="Hiệu ứng Triple Dash: ba vòng nét đứt xanh vàng đỏ"><div class="tile__strip"><p class="tile__row"><span>Vòng sạc</span><span>GIF</span><span>3,8 giây</span><span>2,0 MB</span></p><p class="tile__row"><span>Miễn phí</span><span>Màn sạc</span></p><p class="tile__name">Triple Dash</p></div></li>
-    <li class="tile" data-reveal><img src="img/tile-a060.webp" width="640" height="800" loading="lazy" alt="Hiệu ứng Warp Speed: vệt sáng lao về phía trước"><div class="tile__strip"><p class="tile__row"><span>Hạt sáng</span><span>Video</span><span>4,9 giây</span><span>1,3 MB</span></p><p class="tile__row"><span>Premium</span><span>Màn sạc, hình nền</span></p><p class="tile__name">Warp Speed</p></div></li>
-    <li class="tile" data-reveal><img src="img/tile-a065.webp" width="640" height="800" loading="lazy" alt="Hiệu ứng Bubble Pool: bể bóng hồng tím"><div class="tile__strip"><p class="tile__row"><span>Khối 3D</span><span>Video</span><span>5,0 giây</span><span>1,1 MB</span></p><p class="tile__row"><span>Miễn phí</span><span>Màn sạc, hình nền</span></p><p class="tile__name">Bubble Pool</p></div></li>
-    <li class="tile" data-reveal><img src="img/tile-a035.webp" width="640" height="800" loading="lazy" alt="Hiệu ứng Energy Orb: quả cầu năng lượng xanh"><div class="tile__strip"><p class="tile__row"><span>Tia điện</span><span>Video</span><span>4,9 giây</span><span>0,6 MB</span></p><p class="tile__row"><span>Miễn phí</span><span>Màn sạc, hình nền</span></p><p class="tile__name">Energy Orb</p></div></li>
-    <li class="tile" data-reveal><img src="img/tile-w002.webp" width="640" height="800" loading="lazy" alt="Hình nền động Lighthouse Dusk: ngọn hải đăng lúc hoàng hôn"><div class="tile__strip"><p class="tile__row"><span>Trời đêm</span><span>Video</span><span>3,0 giây</span><span>0,3 MB</span></p><p class="tile__row"><span>Miễn phí</span><span>Hình nền động</span></p><p class="tile__name">Lighthouse Dusk</p></div></li>
-    <li class="tile" data-reveal><img src="img/tile-w031.webp" width="640" height="800" loading="lazy" alt="Hình nền động Lantern Lane: con phố đèn lồng sau mưa"><div class="tile__strip"><p class="tile__row"><span>Phố ấm</span><span>Video</span><span>3,0 giây</span><span>0,3 MB</span></p><p class="tile__row"><span>Miễn phí</span><span>Hình nền động</span></p><p class="tile__name">Lantern Lane</p></div></li>
+    <li class="tile" data-reveal><img src="img/tile-a030.webp" width="640" height="800" loading="lazy" alt="Forked Bolt effect: white and violet lightning on black"><div class="tile__strip"><p class="tile__row"><span>Lightning</span><span>Video</span><span>3.0 s</span><span>0.7 MB</span></p><p class="tile__row"><span>Premium</span><span>Charging, wallpaper</span></p><p class="tile__name">Forked Bolt</p></div></li>
+    <li class="tile" data-reveal><img src="img/tile-a044.webp" width="640" height="800" loading="lazy" alt="Radial Reactor effect: a glowing blue core among gears"><div class="tile__strip"><p class="tile__row"><span>Mechanical</span><span>Video</span><span>10 s</span><span>1.5 MB</span></p><p class="tile__row"><span>Free</span><span>Charging, wallpaper</span></p><p class="tile__name">Radial Reactor</p></div></li>
+    <li class="tile" data-reveal><img src="img/tile-a017.webp" width="640" height="800" loading="lazy" alt="Triple Dash effect: three dashed rings in blue, yellow and red"><div class="tile__strip"><p class="tile__row"><span>Charge Rings</span><span>GIF</span><span>3.8 s</span><span>2.0 MB</span></p><p class="tile__row"><span>Free</span><span>Charging</span></p><p class="tile__name">Triple Dash</p></div></li>
+    <li class="tile" data-reveal><img src="img/tile-a060.webp" width="640" height="800" loading="lazy" alt="Warp Speed effect: light streaks rushing forward"><div class="tile__strip"><p class="tile__row"><span>Particles</span><span>Video</span><span>4.9 s</span><span>1.3 MB</span></p><p class="tile__row"><span>Premium</span><span>Charging, wallpaper</span></p><p class="tile__name">Warp Speed</p></div></li>
+    <li class="tile" data-reveal><img src="img/tile-a065.webp" width="640" height="800" loading="lazy" alt="Bubble Pool effect: a pool of pink and violet balls"><div class="tile__strip"><p class="tile__row"><span>3D Shapes</span><span>Video</span><span>5.0 s</span><span>1.1 MB</span></p><p class="tile__row"><span>Free</span><span>Charging, wallpaper</span></p><p class="tile__name">Bubble Pool</p></div></li>
+    <li class="tile" data-reveal><img src="img/tile-a035.webp" width="640" height="800" loading="lazy" alt="Energy Orb effect: a blue energy sphere"><div class="tile__strip"><p class="tile__row"><span>Lightning</span><span>Video</span><span>4.9 s</span><span>0.6 MB</span></p><p class="tile__row"><span>Free</span><span>Charging, wallpaper</span></p><p class="tile__name">Energy Orb</p></div></li>
+    <li class="tile" data-reveal><img src="img/tile-w002.webp" width="640" height="800" loading="lazy" alt="Lighthouse Dusk live wallpaper: a lighthouse at sunset"><div class="tile__strip"><p class="tile__row"><span>Night Sky</span><span>Video</span><span>3.0 s</span><span>0.3 MB</span></p><p class="tile__row"><span>Free</span><span>Live wallpaper</span></p><p class="tile__name">Lighthouse Dusk</p></div></li>
+    <li class="tile" data-reveal><img src="img/tile-w031.webp" width="640" height="800" loading="lazy" alt="Lantern Lane live wallpaper: a lantern-lit street after rain"><div class="tile__strip"><p class="tile__row"><span>Cozy Streets</span><span>Video</span><span>3.0 s</span><span>0.3 MB</span></p><p class="tile__row"><span>Free</span><span>Live wallpaper</span></p><p class="tile__name">Lantern Lane</p></div></li>
   </ul>
 </section>
 
-<section class="letter" aria-label="Về dữ liệu của bạn">
-  <img class="letter__icon" src="img/icon-96.png" width="44" height="44" alt="Biểu tượng Charge Visuals">
-  <p data-reveal>Charge Visuals không có tài khoản. Bạn mở ứng dụng là dùng được, không đăng ký, không đăng nhập.</p>
-  <p data-reveal>Ba quyền ứng dụng xin đều phục vụ một việc: hiện màn sạc khi bạn cắm dây. Quyền hiện trên ứng dụng khác để mở màn sạc lúc máy khóa, bỏ tối ưu pin để dịch vụ không bị tắt, thông báo để hiện mức pin. Ứng dụng không đọc nội dung màn hình của bạn.</p>
-  <p data-reveal>Video bạn dùng để tự tạo hiệu ứng đi qua bộ chọn ảnh của Android: ứng dụng chỉ nhận đúng file bạn chọn, không đọc cả thư viện ảnh. Hiệu ứng đã tải và hiệu ứng tự tạo nằm trong bộ nhớ riêng của ứng dụng trên máy.</p>
-  <p data-reveal>Ứng dụng miễn phí nhờ quảng cáo và gói Premium qua Google Play. Chúng tôi dùng Firebase, Adjust và Meta để đo lường và sửa lỗi, và <mark>không bán dữ liệu của bạn</mark>. Chi tiết ở <a href="privacy-policy.html">chính sách quyền riêng tư</a>.</p>
+<section class="letter" aria-label="About your data">
+  <img class="letter__icon" src="img/icon-96.png" width="44" height="44" alt="Charge Visuals icon">
+  <p data-reveal>Charge Visuals has no accounts. Open the app and start using it: no sign-up, no login.</p>
+  <p data-reveal>The three permissions the app asks for all serve one purpose: showing the charging screen when you plug in. Display over other apps opens it while your phone is locked, ignoring battery optimization keeps the service from being stopped, and notifications show your battery level. The app never reads what’s on your screen.</p>
+  <p data-reveal>Videos you turn into effects come through Android’s photo picker, so the app only receives the file you choose and never reads your whole gallery. Downloaded and self-made effects stay in the app’s private storage on your phone.</p>
+  <p data-reveal>The app is free thanks to ads and an optional Premium plan through Google Play. We use Firebase, Adjust and Meta for measurement and bug fixing, and <mark>we don’t sell your data</mark>. Details are in our <a href="privacy-policy.html">privacy policy</a>.</p>
   <p class="letter__sign" data-reveal>[PUBLISHER_NAME]</p>
-  <p class="letter__role">Nhà phát hành Charge Visuals</p>
+  <p class="letter__role">Publisher of Charge Visuals</p>
 </section>
 
 <section class="close" aria-labelledby="close-h">
-  <h2 id="close-h" data-reveal>Cắm vào,<br>xem nó sáng</h2>
+  <h2 id="close-h" data-reveal>Plug in,<br>watch it glow</h2>
   <div class="close__base">
-    <p data-reveal>Miễn phí trên Google Play, cho điện thoại Android 9 trở lên.</p>
-    <a class="button button--dark" data-reveal href="https://play.google.com/store/apps/details?id=com.qz.chargevisualswallpapers">Tải trên Google Play</a>
+    <p data-reveal>Free on Google Play for phones running Android 9 or later.</p>
+    <a class="button button--dark" data-reveal href="https://play.google.com/store/apps/details?id=com.qz.chargevisualswallpapers">Get it on Google Play</a>
   </div>
 </section>
 </main>
 
 <footer class="quiet">
-  <p>Charge Visuals · hiệu ứng sạc pin</p>
-  <p class="quiet__links"><a href="privacy-policy.html">Quyền riêng tư</a><a href="terms.html">Điều khoản</a><a href="mailto:[CONTACT_EMAIL]">Liên hệ</a></p>
+  <p>Charge Visuals · charging animations</p>
+  <p class="quiet__links"><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:[CONTACT_EMAIL]">Contact</a></p>
   <p class="quiet__end">© 2026 [PUBLISHER_NAME]</p>
 </footer>
 <script src="app.js" defer></script>

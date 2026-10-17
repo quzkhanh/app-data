@@ -1,8 +1,8 @@
 (() => {
   const all = (sel, root = document) => [...root.querySelectorAll(sel)];
 
-  // Hiện từng phần khi vào khung nhìn; mỗi section đếm thứ tự riêng để so le 80ms.
-  // Shutter: clip-path làm IntersectionObserver thấy diện tích 0, nên mở ngay khi trang dựng xong (luôn nằm ở màn đầu).
+  // Reveal each part as it enters the viewport; each section counts its own order for the 80ms stagger.
+  // Shutter: clip-path makes IntersectionObserver see zero area, so open it as soon as the page is built (it is always in the first fold).
   const shutter = document.querySelector('.shutter');
   if (shutter) requestAnimationFrame(() => requestAnimationFrame(() => shutter.classList.add('is-in')));
   const reveals = all('[data-reveal]:not(.shutter)');
@@ -19,9 +19,9 @@
     }), 2500));
   } else reveals.forEach(show);
 
-  // Đồng hồ và ngày theo giờ máy người xem.
+  // Clock and date follow the viewer's device time.
   const pad = (n) => String(n).padStart(2, '0');
-  const dateFmt = new Intl.DateTimeFormat('vi-VN', { weekday: 'long', day: 'numeric', month: 'long' });
+  const dateFmt = new Intl.DateTimeFormat('en-US', { weekday: 'long', day: 'numeric', month: 'long' });
   const tick = () => {
     const now = new Date();
     const hh = pad(now.getHours()), mm = pad(now.getMinutes());
@@ -33,14 +33,14 @@
   tick();
   setInterval(tick, 15000);
 
-  // Mức pin thật nếu trình duyệt cho đọc (Chrome Android); không có thì giữ số mẫu.
+  // Real battery level when the browser exposes it (Chrome Android); otherwise keep the sample value.
   if (navigator.getBattery) navigator.getBattery().then((b) => {
     const paint = () => {
       const level = Math.round(b.level * 100);
       all('[data-level]').forEach((el) => { el.textContent = level; });
       all('[data-fill]').forEach((el) => el.style.setProperty('--level', `${level}%`));
       all('[data-state]').forEach((el) => {
-        el.textContent = b.charging ? (level >= 100 ? 'Đã sạc đầy · rút sạc để đóng' : 'Đang sạc · máy của bạn') : 'Chưa cắm sạc · cắm thử xem';
+        el.textContent = b.charging ? (level >= 100 ? 'Fully charged · unplug to close' : 'Charging · your phone') : 'Not charging · plug in to try';
       });
     };
     paint();
@@ -48,25 +48,25 @@
     b.addEventListener('chargingchange', paint);
   }).catch(() => {});
 
-  // Thẻ Sẵn sàng ở giữa: bấm Bật là xong bước cuối.
+  // Middle Ready card: tapping Allow completes the last step.
   const live = document.getElementById('ready-live');
   const btn = live && live.querySelector('[data-ready-btn]');
   if (btn) btn.addEventListener('click', () => {
-    live.querySelector('[data-ready-kicker]').innerHTML = '<i class="dot"></i>Sẵn sàng · 3/3';
+    live.querySelector('[data-ready-kicker]').innerHTML = '<i class="dot"></i>Ready · 3/3';
     live.querySelector('[data-ready-kicker]').classList.add('ready__kicker--ok');
-    live.querySelector('[data-ready-title]').textContent = 'Xong. Cắm sạc để xem';
+    live.querySelector('[data-ready-title]').textContent = 'Done. Plug in to see it';
     live.querySelector('[data-ready-step]').classList.add('on');
     const st = live.querySelector('[data-ready-st]');
     st.className = 'perm__st ok';
     st.innerHTML = '<svg><use href="#i-check"/></svg>';
     const done = document.createElement('span');
     done.className = 'chip-done';
-    done.textContent = 'Đã bật';
+    done.textContent = 'Allowed';
     btn.replaceWith(done);
     live.classList.add('ready--ok');
   }, { once: true });
 
-  // Cách dùng: câu gần giữa màn hình quyết định trạng thái sân khấu.
+  // How it works: the sentence nearest the middle of the screen sets the stage state.
   const stage = document.querySelector('.how__stage');
   const steps = all('.how__step');
   if (stage && 'IntersectionObserver' in window) {
@@ -79,7 +79,7 @@
     steps.forEach((s) => so.observe(s));
   }
 
-  // Công tắc: chuột, Space, Enter (button gốc đã xử lý phím).
+  // Switches: mouse, Space, Enter (the native button already handles keys).
   all('.switch').forEach((sw) => sw.addEventListener('click', () => {
     sw.setAttribute('aria-checked', String(sw.getAttribute('aria-checked') !== 'true'));
   }));
