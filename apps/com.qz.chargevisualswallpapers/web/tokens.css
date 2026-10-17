@@ -1,0 +1,111 @@
+/* Charge Visuals — concept "AMOLED Volt". Nguồn duy nhất cho mọi mock; design-tokens.md ghi lại cùng giá trị. */
+@font-face { font-family: 'Unbounded'; src: url(fonts/Unbounded.woff2) format('woff2'); font-weight: 200 900; font-display: swap; }
+@font-face { font-family: 'Manrope'; src: url(fonts/Manrope.woff2) format('woff2'); font-weight: 200 800; font-display: swap; }
+
+:root {
+  /* Màu: nền graphite (không đen tuyền, để ô nội dung đen tuyền đọc như "màn hình"), 1 màu nhấn vôn chanh */
+  --md-sys-color-primary: #D7FF3A;
+  --md-sys-color-on-primary: #151A05;
+  --md-sys-color-primary-container: #2B330F;
+  --md-sys-color-on-primary-container: #E4FF84;
+  --md-sys-color-secondary: #C8CCD4;
+  --md-sys-color-on-secondary: #1A1C20;
+  --md-sys-color-secondary-container: #2A2D33;
+  --md-sys-color-on-secondary-container: #E4E7EC;
+  --md-sys-color-error: #FF7A6B;
+  --md-sys-color-on-error: #2B0904;
+  --md-sys-color-error-container: #3D1813;
+  --md-sys-color-on-error-container: #FFB4AA;
+  --md-sys-color-surface: #0E0F12;
+  --md-sys-color-surface-dim: #0A0B0D;
+  --md-sys-color-surface-bright: #26282E;
+  --md-sys-color-surface-container-lowest: #000000;
+  --md-sys-color-surface-container-low: #15161A;
+  --md-sys-color-surface-container: #1B1D21;
+  --md-sys-color-surface-container-high: #23252A;
+  --md-sys-color-surface-container-highest: #2C2F35;
+  --md-sys-color-on-surface: #F1F2F4;
+  --md-sys-color-on-surface-variant: #A2A7B1;
+  --md-sys-color-outline: #5C616C;
+  --md-sys-color-outline-variant: #2D3037;
+  --md-sys-color-inverse-surface: #EDEEF1;
+  --md-sys-color-inverse-on-surface: #1A1C20;
+  --md-sys-color-inverse-primary: #4C5E00;
+  --md-sys-color-scrim: rgba(0, 0, 0, 0.64);
+
+  /* Màn sạc (ChargingActivity) */
+  --charge-on-media: #FFFFFF;
+  --charge-on-media-muted: rgba(255, 255, 255, 0.72);
+  --charge-scrim-top: linear-gradient(180deg, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0) 100%);
+  --charge-scrim-bottom: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  --charge-night-dim: rgba(0, 0, 0, 0.6);
+  --charge-track: rgba(255, 255, 255, 0.18);
+  --grid-line: rgba(255, 255, 255, 0.045);
+  --shimmer-base: #1D1F24;
+  --shimmer-hi: rgba(255, 255, 255, 0.06);
+  --brand-strip: rgba(0, 0, 0, 0.62);
+
+  /* Typography: Unbounded (display, số), Manrope (body) */
+  --font-display: 'Unbounded', 'Manrope', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+  --font-clock: 'Unbounded', sans-serif;
+
+  --type-clock-large-size: 84px;   --type-clock-large-lh: 92px;  --type-clock-large-weight: 500; --type-clock-large-ls: -2px;
+  --type-clock-thin-size: 96px;    --type-clock-thin-lh: 100px;  --type-clock-thin-weight: 200;  --type-clock-thin-ls: -3px;
+  --type-clock-stack-size: 120px;  --type-clock-stack-lh: 108px; --type-clock-stack-weight: 700; --type-clock-stack-ls: -4px;
+  --type-display-small-size: 36px; --type-display-small-lh: 44px; --type-display-small-weight: 600; --type-display-small-ls: -0.5px;
+  --type-headline-large-size: 30px;  --type-headline-large-lh: 38px;  --type-headline-large-weight: 600;  --type-headline-large-ls: -0.5px;
+  --type-headline-medium-size: 26px; --type-headline-medium-lh: 34px; --type-headline-medium-weight: 600; --type-headline-medium-ls: -0.4px;
+  --type-headline-small-size: 22px;  --type-headline-small-lh: 30px;  --type-headline-small-weight: 600;  --type-headline-small-ls: -0.3px;
+  --type-title-large-size: 18px;  --type-title-large-lh: 26px;  --type-title-large-weight: 600;  --type-title-large-ls: -0.2px;
+  --type-title-medium-size: 16px; --type-title-medium-lh: 24px; --type-title-medium-weight: 700; --type-title-medium-ls: 0;
+  --type-title-small-size: 14px;  --type-title-small-lh: 20px;  --type-title-small-weight: 700;  --type-title-small-ls: 0;
+  --type-body-large-size: 16px;   --type-body-large-lh: 24px;   --type-body-large-weight: 500;   --type-body-large-ls: 0;
+  --type-body-medium-size: 14px;  --type-body-medium-lh: 20px;  --type-body-medium-weight: 500;  --type-body-medium-ls: 0;
+  --type-body-small-size: 12px;   --type-body-small-lh: 16px;   --type-body-small-weight: 500;   --type-body-small-ls: 0.1px;
+  --type-label-large-size: 14px;  --type-label-large-lh: 20px;  --type-label-large-weight: 700;  --type-label-large-ls: 0.1px;
+  --type-label-medium-size: 12px; --type-label-medium-lh: 16px; --type-label-medium-weight: 700; --type-label-medium-ls: 0.3px;
+  --type-label-small-size: 11px;  --type-label-small-lh: 16px;  --type-label-small-weight: 700;  --type-label-small-ls: 0.4px;
+
+  /* Spacing (thang 4) */
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 20px; --space-6: 24px; --space-8: 32px; --space-10: 40px; --space-12: 48px; --space-16: 64px;
+
+  /* Radius: 3 mức + full */
+  --radius-sm: 12px;   /* thumbnail, ô nhỏ, ô thông số */
+  --radius-md: 20px;   /* thẻ, nhóm settings, preview */
+  --radius-lg: 28px;   /* sheet, dialog */
+  --radius-full: 9999px;
+
+  --stroke-thin: 1px;
+  --stroke-bold: 2px;
+  --stroke-ring: 6px;
+
+  /* Kích thước */
+  --screen-w: 412px; --screen-h: 915px;
+  --size-status: 32px; --size-gesture: 24px; --size-appbar: 64px; --size-touch: 48px;
+  --size-icon: 24px; --size-icon-sm: 20px; --size-icon-xs: 14px; --size-icon-lg: 32px;
+  --size-nav: 80px; --size-nav-ind-w: 64px; --size-nav-ind-h: 32px;
+  --size-search: 52px; --size-chip: 36px; --size-btn: 56px; --size-btn-sm: 40px;
+  --size-badge: 24px; --size-tile: 40px; --size-thumb-row: 64px;
+  --size-switch-w: 52px; --size-switch-h: 32px; --size-switch-thumb: 24px;
+  --size-ring: 216px; --size-ring-sm: 168px;
+  --size-app-icon: 120px; --size-avatar: 104px; --size-star: 40px; --size-flag: 28px; --size-lang-row: 56px;
+  --size-dot: 4px; --size-dot-active: 18px; --size-sheet-handle-w: 32px;
+  --size-onb-reserve: 310px;  /* vùng native ad của template onboarding (onb_page.xml), Step 3 để trống */
+  --size-iap-header: 220px; --size-iap-art: 167px; --size-iap-plan: 66px; --size-iap-btn: 52px;
+  --size-trim-h: 64px; --size-trim-handle: 14px;
+  --ratio-thumb: 9 / 16;
+  --ratio-hero: 16 / 10;
+
+  --opacity-disabled: 0.38;
+  --opacity-dim: 0.5;
+
+  /* Motion (Compose MotionTokens) */
+  --motion-short: 150ms;
+  --motion-medium: 300ms;
+  --motion-long: 450ms;
+  --ease-emphasized: cubic-bezier(0.2, 0, 0, 1);
+  --ease-decelerate: cubic-bezier(0.05, 0.7, 0.1, 1);
+  --ease-accelerate: cubic-bezier(0.3, 0, 0.8, 0.15);
+  --press-scale: 0.97;
+}
