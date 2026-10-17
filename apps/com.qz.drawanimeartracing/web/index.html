@@ -1,7 +1,214 @@
-<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vẽ Anime AR - Học vẽ anime bằng camera AR</title><link rel="stylesheet" href="style.css"></head><body><header><a href="index.html">Vẽ Anime AR</a><nav><a href="privacy-policy.html">Quyền riêng tư</a><a href="terms.html">Điều khoản</a></nav></header><main>
-<section class="hero"><h1>Vẽ Anime AR</h1><p>Đặt tờ giấy dưới camera, hiện nét mẫu anime lên giấy và vẽ theo từng nét. Học vẽ anime dễ hơn, ngay trên điện thoại.</p><a class="btn" href="#">Tải trên Google Play</a></section>
-<div class="card"><h3>Vẽ theo nét mẫu bằng AR</h3><p>Camera hiển thị mẫu line-art phủ lên tờ giấy thật để bạn đồ theo, có chỉnh độ mờ, vị trí và kích thước.</p></div>
-<div class="card"><h3>Bài học từng bước</h3><p>Chia bài vẽ thành các bước nhỏ, từ phác hình đến hoàn thiện.</p></div>
-<div class="card"><h3>Quay time-lapse và lưu tác phẩm</h3><p>Quay lại quá trình vẽ, lưu ảnh và video vào máy, xem lại trong bộ sưu tập của bạn.</p></div>
-<div class="card"><h3>Riêng tư</h3><p>Hình ảnh camera chỉ xử lý trên máy, không tải lên máy chủ, không cần tài khoản. <a href="privacy-policy.html">Xem chính sách</a>.</p></div>
-</main><footer>&copy; [PUBLISHER_NAME]. Liên hệ: <a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SketchLens: Anime on Paper - trace anime sketches on real paper</title>
+<meta name="description" content="SketchLens shows a faint anime line-art guide over your paper through the phone camera, so you can trace it with a real pencil. Android app.">
+<link rel="icon" href="img/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<div class="split">
+  <div class="stage" aria-hidden="true">
+    <img class="on" data-key="sketch" src="img/onb-1.webp" width="960" height="960" alt="">
+    <img data-key="trace" src="img/onb-2.webp" width="960" height="960" alt="" loading="lazy">
+  </div>
+  <div class="col">
+    <section class="hero" data-stage="sketch" aria-labelledby="top">
+      <div class="hero-band" aria-hidden="true">
+        <svg>
+          <defs><pattern id="tone" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1" fill="rgba(22,23,29,.14)"/></pattern></defs>
+          <rect width="100%" height="100%" fill="url(#tone)"/>
+          <g stroke="rgba(22,23,29,.16)" stroke-width="2" stroke-linecap="round">
+            <line x1="58%" y1="12" x2="98%" y2="6"/><line x1="64%" y1="22" x2="98%" y2="19"/>
+            <line x1="52%" y1="32" x2="98%" y2="32"/><line x1="66%" y1="42" x2="98%" y2="45"/><line x1="60%" y1="52" x2="98%" y2="58"/>
+          </g>
+          <line x1="6%" y1="44" x2="44%" y2="20" stroke="#FF4F79" stroke-width="2" stroke-dasharray="6 6" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="hero-body">
+        <a class="wordmark" href="index.html"><img src="img/icon.png" width="40" height="40" alt="">SketchLens</a>
+        <h1 id="top">Trace anime on real paper</h1>
+        <p>SketchLens lays a faint anime line-art guide over your paper through the camera. You watch the screen and draw every line with your own pencil.</p>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.qz.drawanimeartracing">Get it on Google Play</a>
+      </div>
+      <nav class="hero-links" aria-label="On this page">
+        <a href="#how">How it works</a><a href="#lesson">The eye lesson</a><a href="#faq">Questions</a>
+      </nav>
+    </section>
+
+    <section id="how" class="read" data-stage="trace" aria-labelledby="how-h">
+      <h2 id="how-h" data-rise>From phone to paper</h2>
+      <p data-rise>No stand? A cup or a stack of books holds the phone. The app never draws for you and does not make pictures with AI; the drawing is yours.</p>
+      <div class="slip-ground" data-rise>
+        <div class="slip">
+          <h3>Before you start</h3>
+          <ul>
+            <li><span>Pick a template or the eye lesson</span><i></i><span>300+</span></li>
+            <li><span>Choose Sketch or Trace</span><i></i><span>2 modes</span></li>
+          </ul>
+          <h3>At the desk</h3>
+          <ul>
+            <li><span>Prop the phone over your sheet</span><i></i><span>cup, books</span></li>
+            <li><span>Fit the guide to the paper</span><i></i><span>A4, A5</span></li>
+            <li><span>Lock guide and focus</span><i></i><span>hold 1 s</span></li>
+          </ul>
+          <h3>While you draw</h3>
+          <ul>
+            <li><span>Follow the faint lines in pencil</span><i></i><span>your hand</span></li>
+            <li><span>Tap Done to save or share</span><i></i><span>Sketchbook</span></li>
+          </ul>
+          <p class="total"><span>A drawing on your own paper</span><span>yours</span></p>
+        </div>
+      </div>
+      <p data-rise>Sketch uses the camera to place the guide over real paper. Trace turns the screen bright: lay thin paper on top and follow the lines, no camera needed.</p>
+    </section>
+  </div>
+</div>
+
+<section id="lesson" class="lesson" aria-labelledby="lesson-h">
+  <input class="step-radio" type="radio" name="step" id="s1">
+  <input class="step-radio" type="radio" name="step" id="s2">
+  <input class="step-radio" type="radio" name="step" id="s3" checked>
+  <input class="step-radio" type="radio" name="step" id="s4">
+  <input class="step-radio" type="radio" name="step" id="s5">
+  <input class="step-radio" type="radio" name="step" id="s6">
+  <div class="lesson-grid">
+    <div class="lesson-head">
+      <h2 id="lesson-h" data-rise>Anime Eye Basics</h2>
+      <p data-rise>The full lesson in the app, in six steps. Lines build up layer by layer, with a progress bar and a draft so you can stop and continue later. Tap a step to see it. More lessons are coming in future updates.</p>
+      <ul class="steps">
+        <li><label for="s1">Frame and centre lines</label></li>
+        <li><label for="s2">Block in the lids</label></li>
+        <li><label for="s3">Clean lines and iris</label></li>
+        <li><label for="s4">Lashes and pupil</label></li>
+        <li><label for="s5">Brow and lower lid</label></li>
+        <li><label for="s6">Iris detail and shading</label></li>
+      </ul>
+    </div>
+    <div class="lesson-stage" data-rise>
+      <div class="sheet" data-ui>
+        <p class="sheet-top"><span>Anime Eye Basics</span><span>Step <span class="step-no" data-s="1">1</span><span class="step-no" data-s="2">2</span><span class="step-no" data-s="3">3</span><span class="step-no" data-s="4">4</span><span class="step-no" data-s="5">5</span><span class="step-no" data-s="6">6</span> of 6</span></p>
+        <div class="segs" aria-hidden="true"><b></b><b></b><b></b><b></b><b></b><b></b></div>
+        <div class="frames">
+          <img data-s="1" src="img/eye-1.webp" width="640" height="640" alt="Step 1: an eye shape blocked in with centre lines" loading="lazy">
+          <img data-s="2" src="img/eye-2.webp" width="640" height="640" alt="Step 2: box construction for the upper and lower lids" loading="lazy">
+          <img data-s="3" src="img/eye-3.webp" width="640" height="640" alt="Step 3: clean lid lines and the iris circles" loading="lazy">
+          <img data-s="4" src="img/eye-4.webp" width="640" height="640" alt="Step 4: lashes, shaded pupil and highlights" loading="lazy">
+          <img data-s="5" src="img/eye-5.webp" width="640" height="640" alt="Step 5: brow and lower lid added" loading="lazy">
+          <img data-s="6" src="img/eye-6.webp" width="640" height="640" alt="Step 6: finished eye with iris detail and shading" loading="lazy">
+        </div>
+        <p class="sheet-cap">In the app this sheet sits over your paper, one layer at a time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="split split--rev">
+  <div class="stage" aria-hidden="true">
+    <img class="on" data-key="tools" src="img/onb-3.webp" width="960" height="960" alt="" loading="lazy">
+    <img data-key="premium" src="img/premium-header.webp" width="960" height="960" alt="" loading="lazy">
+  </div>
+  <div class="col">
+    <section class="read" data-stage="tools" aria-labelledby="tools-h">
+      <h2 id="tools-h" data-rise>Tools for a steady guide</h2>
+      <div class="mods">
+        <div class="mod" data-rise>
+          <div class="panel" data-ui><div class="ui-row"><span>Opacity</span><span>60%</span></div><div class="track"><b></b><i></i></div><div class="ui-row"><span>Zoom</span><span>1.4x</span></div></div>
+          <div><h3>Fade it until you see your pencil</h3><p>Set the guide's opacity, zoom, drag and rotate it to fit your sheet.</p></div>
+        </div>
+        <div class="mod" data-rise>
+          <div class="panel" data-ui><div class="ui-row"><span>Fit to paper</span></div><div class="chips"><span class="chip on">A4</span><span class="chip">A5</span></div></div>
+          <div><h3>Fit A4 or A5</h3><p>Snap the guide to your paper size. The app remembers your last position for next time.</p></div>
+        </div>
+        <div class="mod" data-rise>
+          <div class="panel" data-ui><div class="lock"><span class="lock-btn"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F7F8FB" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5Zm-3 8V7a3 3 0 1 1 6 0v3H9Z"/></svg></span><span>Hold 1 s to unlock</span></div></div>
+          <div><h3>Lock it in place</h3><p>Lock the guide and focus so a stray touch does not shift it. Hold the lock button for one second to unlock.</p></div>
+        </div>
+        <div class="mod" data-rise>
+          <div class="panel" data-ui><div class="ui-row"><span>Flashlight</span><span class="switch on"></span></div><div class="ui-row"><span>Keep screen on</span><span class="switch on"></span></div></div>
+          <div><h3>Light for dim rooms</h3><p>Turn on the flashlight; the screen stays awake while you draw.</p></div>
+        </div>
+        <div class="mod" data-rise>
+          <div class="panel" data-ui><span class="rec">02:14</span></div>
+          <div><h3>Record a time-lapse</h3><p>Film the drawing as it happens. The video and the finished photo go to your Sketchbook, ready to save or share.</p></div>
+        </div>
+        <div class="mod" data-rise>
+          <div class="panel panel--photo" data-ui><img src="img/eye-4.webp" width="640" height="640" alt="A pencil eye drawing picked as a template" loading="lazy"><span class="chip">From gallery</span></div>
+          <div><h3>Use your own photo</h3><p>Pick a picture through the system photo picker and trace it. It stays on your phone.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="premium" class="read menu" data-stage="premium" aria-labelledby="price-h">
+      <h2 id="price-h" data-rise>Free, with an optional Premium</h2>
+      <div data-rise>
+        <h3>Free</h3>
+        <dl>
+          <div><dt>Sketch and Trace<small>Every tool above, on any sheet of paper.</small></dt><dd>Free</dd></div>
+          <div><dt>Free templates and the eye lesson<small>The free version shows ads.</small></dt><dd>Free</dd></div>
+        </dl>
+      </div>
+      <div data-rise>
+        <h3>Premium</h3>
+        <dl>
+          <div><dt>Premium templates and lessons<small>Including new lessons as they arrive.</small></dt><dd>Included</dd></div>
+          <div><dt>No ads<small>Draw without interruptions.</small></dt><dd>Included</dd></div>
+          <div><dt>Plans<small>Shown in the app with the current price. Cancel a subscription any time in Google Play.</small></dt><dd>Google Play</dd></div>
+        </dl>
+      </div>
+      <a class="btn" data-rise href="https://play.google.com/store/apps/details?id=com.qz.drawanimeartracing">Get it on Google Play</a>
+    </section>
+  </div>
+</div>
+
+<section id="faq" class="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h" data-rise>Questions, answered</h2>
+  <div class="faq-text">
+    <p data-rise><b>Does the app draw for me?</b> No. It shows a faint guide and you draw every line with your own pencil. Nothing is generated with AI.</p>
+    <p data-rise><b>What do I need?</b> Your phone, a sheet of paper (A4 or A5 works best), a pencil and something to prop the phone on: a stand, a cup or a stack of books.</p>
+    <p data-rise><b>Can I draw without the camera?</b> Yes. Trace turns the screen into a bright lightbox; lay thin paper on the screen and follow the lines.</p>
+    <p data-rise><b>Does my camera picture leave the phone?</b> No. Camera frames are processed on the device and never uploaded. Drawings and time-lapse videos are saved on your phone. Read the <a href="privacy-policy.html">privacy policy</a>.</p>
+    <p data-rise><b>How many lessons are there?</b> One full step-by-step lesson today, Anime Eye Basics in six steps. More lessons are coming in future updates.</p>
+    <p data-rise><b>Does it work offline?</b> A starter set of templates and the eye lesson are built into the app. The full library loads when you are online.</p>
+    <p data-rise><b>Which permissions does it ask for?</b> Camera, for Sketch only; Trace works without it. Notifications on Android 13 and later, asked once after your first saved drawing, and only to tell you about new templates and lessons; you can say no. Storage only on Android 9, to save drawings to Pictures.</p>
+    <p data-rise><b>Is it free?</b> Yes, with ads. Premium is optional: it removes ads and unlocks Premium templates and lessons. Manage or cancel it in Google Play.</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <p>SketchLens, anime tracing on paper</p>
+  <nav aria-label="Legal"><a href="privacy-policy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="mailto:[CONTACT_EMAIL]">Contact</a></nav>
+  <p>&copy; 2026 [PUBLISHER_NAME]</p>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(() => {
+  const rise = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (!e.isIntersecting) return;
+      const group = [...e.target.parentElement.querySelectorAll(':scope > [data-rise]')];
+      e.target.style.transitionDelay = `${Math.max(0, group.indexOf(e.target)) * 80}ms`;
+      e.target.classList.add('in');
+      rise.unobserve(e.target);
+    });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('[data-rise]').forEach((el) => rise.observe(el));
+
+  const stage = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (!e.isIntersecting) return;
+      const key = e.target.dataset.stage;
+      const imgs = e.target.closest('.split').querySelectorAll('.stage img');
+      imgs.forEach((img) => img.classList.toggle('on', img.dataset.key === key));
+    });
+  }, { rootMargin: '-45% 0px -45% 0px' });
+  document.querySelectorAll('[data-stage]').forEach((el) => stage.observe(el));
+})();
+</script>
+</body>
+</html>

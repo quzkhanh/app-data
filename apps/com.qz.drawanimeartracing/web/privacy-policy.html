@@ -1,37 +1,82 @@
-<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chính sách quyền riêng tư - Vẽ Anime AR</title><link rel="stylesheet" href="style.css"></head><body><header><a href="index.html">Vẽ Anime AR</a><nav><a href="privacy-policy.html">Quyền riêng tư</a><a href="terms.html">Điều khoản</a></nav></header><main>
-<h1>Chính sách quyền riêng tư</h1><p>Cập nhật lần cuối: 16/10/2026</p>
-<div class="note">Bản nháp từ template, cần được [PUBLISHER_NAME] xem xét trước khi phát hành.</div>
-<p>Vẽ Anime AR (gói com.qz.drawanimeartracing) do [PUBLISHER_NAME] phát hành. Chính sách này giải thích dữ liệu ứng dụng xử lý và các bên thứ ba liên quan.</p>
-<h2>1. Tóm tắt</h2>
-<p>Ứng dụng không yêu cầu tài khoản. Hình ảnh từ camera chỉ được xử lý trên thiết bị và không được tải lên máy chủ của chúng tôi. Ứng dụng có phân tích, quảng cáo và thanh toán thông qua các SDK bên thứ ba nêu dưới đây.</p>
-<h2>2. Quyền ứng dụng sử dụng</h2>
-<table><tr><th>Quyền</th><th>Mục đích</th></tr>
-<tr><td>CAMERA</td><td>Hiển thị hình xem trước để chồng nét mẫu AR lên giấy và quay video time-lapse. Dữ liệu camera xử lý trên máy, không tải lên.</td></tr>
-<tr><td>POST_NOTIFICATIONS</td><td>Hiển thị thông báo (qua Firebase Cloud Messaging). Bạn có thể từ chối hoặc tắt trong cài đặt hệ thống.</td></tr>
-<tr><td>INTERNET, ACCESS_NETWORK_STATE</td><td>Tải nội dung mẫu và cấu hình, hiển thị quảng cáo, gửi phân tích, kiểm tra kết nối.</td></tr></table>
-<p>Ứng dụng không xin quyền microphone, vị trí, danh bạ hay quyền đọc/ghi bộ nhớ. Ảnh và video bạn lưu được ghi vào thư mục Pictures và Movies của thiết bị qua MediaStore (cơ chế lưu trữ có phạm vi của Android).</p>
-<h2>3. Dữ liệu chúng tôi và các SDK có thể thu thập</h2>
-<table><tr><th>Dữ liệu</th><th>Mục đích</th><th>Bên xử lý</th></tr>
-<tr><td>Ảnh, video bạn tạo</td><td>Lưu vào máy và hiển thị trong bộ sưu tập. Không rời khỏi thiết bị.</td><td>Chỉ trên thiết bị</td></tr>
-<tr><td>Mã định danh quảng cáo (Advertising ID), địa chỉ IP, thông tin thiết bị, tương tác quảng cáo</td><td>Hiển thị và đo hiệu quả quảng cáo</td><td>Google AdMob và các mạng quảng cáo qua mediation</td></tr>
-<tr><td>Sự kiện sử dụng, thông tin thiết bị, mã định danh ứng dụng</td><td>Phân tích sử dụng và cải thiện ứng dụng</td><td>Firebase Analytics</td></tr>
-<tr><td>Báo cáo sự cố, trạng thái thiết bị khi lỗi</td><td>Phát hiện và sửa lỗi</td><td>Firebase Crashlytics</td></tr>
-<tr><td>Cấu hình từ xa, thông tin thiết bị</td><td>Bật/tắt tính năng, cập nhật nội dung</td><td>Firebase Remote Config</td></tr>
-<tr><td>Token thiết bị</td><td>Gửi thông báo đẩy</td><td>Firebase Cloud Messaging</td></tr>
-<tr><td>Mã định danh quảng cáo, sự kiện cài đặt và hiển thị quảng cáo</td><td>Đo lường nguồn cài đặt và hiệu quả quảng cáo</td><td>Adjust</td></tr>
-<tr><td>Mã định danh quảng cáo, sự kiện ứng dụng</td><td>Đo lường quảng cáo và phân bổ cài đặt</td><td>Facebook (Meta) SDK</td></tr>
-<tr><td>Thông tin giao dịch (do Google xử lý; chúng tôi không nhận số thẻ)</td><td>Mua trong ứng dụng, kiểm tra quyền lợi</td><td>Google Play Billing</td></tr>
-<tr><td>Tùy chọn trong ứng dụng, lịch sử bộ sưu tập</td><td>Lưu cục bộ trên máy (cơ sở dữ liệu Room)</td><td>Chỉ trên thiết bị</td></tr></table>
-<h2>4. SDK bên thứ ba</h2>
-<ul><li>Google Play Services Ads (AdMob) và bộ SDK quảng cáo kèm mediation: <a href="https://policies.google.com/privacy">chính sách Google</a></li>
-<li>Firebase (Analytics, Crashlytics, Remote Config, Cloud Messaging): <a href="https://firebase.google.com/support/privacy">chính sách Firebase</a></li>
-<li>Adjust: <a href="https://www.adjust.com/terms/privacy-policy/">chính sách Adjust</a></li>
-<li>Facebook SDK (Meta): <a href="https://www.facebook.com/privacy/policy/">chính sách Meta</a></li>
-<li>Google Play Billing: <a href="https://policies.google.com/privacy">chính sách Google</a></li></ul>
-<h2>5. Quyền của bạn</h2>
-<p>Bạn có thể: đặt lại hoặc xóa mã định danh quảng cáo, hoặc chọn không nhận quảng cáo cá nhân hóa trong Cài đặt Android (Google, Quảng cáo); thu hồi quyền camera hoặc thông báo trong cài đặt hệ thống; xóa ảnh, video đã lưu trong thư viện của máy; xóa dữ liệu ứng dụng hoặc gỡ cài đặt để xóa dữ liệu cục bộ. Tùy nơi cư trú, bạn có thể có quyền truy cập, chỉnh sửa, xóa dữ liệu hoặc rút lại sự đồng ý; vui lòng liên hệ bên dưới.</p>
-<h2>6. Trẻ em</h2><p>Ứng dụng không nhắm tới trẻ dưới 13 tuổi và chúng tôi không cố ý thu thập dữ liệu của trẻ em.</p>
-<h2>7. Lưu trữ và bảo mật</h2><p>Dữ liệu gửi tới dịch vụ bên thứ ba được truyền qua HTTPS. Dữ liệu do các bên thứ ba thu thập tuân theo chính sách của họ.</p>
-<h2>8. Thay đổi chính sách</h2><p>Chúng tôi có thể cập nhật chính sách này; bản mới được đăng trên trang này kèm ngày cập nhật.</p>
-<h2>9. Liên hệ</h2><p>[PUBLISHER_NAME]: <a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a></p>
-</main><footer>&copy; [PUBLISHER_NAME]. Liên hệ: <a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy - SketchLens: Anime on Paper</title>
+<link rel="icon" href="img/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="doc-bar">
+  <a class="wordmark" href="index.html"><img src="img/icon.png" width="40" height="40" alt="">SketchLens</a>
+  <nav aria-label="Legal"><a href="privacy-policy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav>
+</header>
+<main class="doc">
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: October 17, 2026</p>
+<p class="note">Draft: the publisher name and contact email are still to be filled in, and this policy is pending review by [PUBLISHER_NAME].</p>
+<p>SketchLens: Anime on Paper (package com.qz.drawanimeartracing, "the app") is published by [PUBLISHER_NAME] ("we", "us"). This policy explains what data the app handles and which third parties are involved.</p>
+
+<h2>1. Summary</h2>
+<p>The app does not require an account. Camera frames are processed only on your device and are never uploaded to our servers. The app uses third-party SDKs, listed below, for analytics, advertising, notifications and payments.</p>
+
+<h2>2. Permissions the app uses</h2>
+<div class="table-wrap"><table>
+<tr><th>Permission</th><th>Purpose</th></tr>
+<tr><td>CAMERA</td><td>Shows the camera preview so the line-art guide can be overlaid on your paper (AR), and records time-lapse videos. Camera data is processed on the device and is not uploaded. If you decline, Trace mode still works without the camera.</td></tr>
+<tr><td>POST_NOTIFICATIONS (Android 13 and later)</td><td>Shows notifications (via Firebase Cloud Messaging) about new templates and lessons. The app asks only once, after your first saved drawing; it is optional. You can decline, or turn notifications off at any time in system settings.</td></tr>
+<tr><td>WRITE_EXTERNAL_STORAGE (Android 9 only)</td><td>Only on Android 9: saves your drawings to the Pictures folder and time-lapse videos to the Movies folder. On Android 10 and later the app saves through MediaStore and does not request this permission.</td></tr>
+<tr><td>INTERNET, ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE</td><td>Downloads templates, lessons and configuration, shows ads, sends analytics, and checks the connection.</td></tr>
+<tr><td>AD_ID, ACCESS_ADSERVICES_* (Privacy Sandbox)</td><td>Declared by the advertising and analytics SDKs: reading the advertising identifier, ad measurement and attribution.</td></tr>
+<tr><td>BILLING</td><td>Buying Premium through Google Play.</td></tr>
+</table></div>
+<p>The app does not request microphone, location, contacts or storage read permissions; time-lapse videos are recorded without sound. The storage write permission (WRITE_EXTERNAL_STORAGE) is requested only on Android 9, to save drawings to the Pictures folder; on Android 10 and later, photos and videos are written to Pictures and Movies through MediaStore (Android's scoped storage) without this permission. Photos you choose from your gallery are picked through the system photo picker and used only on your device.</p>
+
+<h2>3. Data we and the SDKs may collect</h2>
+<div class="table-wrap"><table>
+<tr><th>Data</th><th>Purpose</th><th>Processed by</th></tr>
+<tr><td>Photos and videos you create</td><td>Saved to your device and shown in your Sketchbook. They do not leave your device.</td><td>On device only</td></tr>
+<tr><td>Advertising ID, IP address and approximate location inferred from it, device information, ad interactions</td><td>Showing ads, measuring ad performance and preventing fraud</td><td>Google AdMob and the mediation ad networks listed in section 4</td></tr>
+<tr><td>Usage events, device information, app identifiers</td><td>Usage analytics and improving the app</td><td>Firebase Analytics</td></tr>
+<tr><td>Crash reports, device state at the time of the error</td><td>Finding and fixing bugs</td><td>Firebase Crashlytics</td></tr>
+<tr><td>Remote configuration, device information</td><td>Turning features on or off, updating content</td><td>Firebase Remote Config</td></tr>
+<tr><td>Device token</td><td>Sending push notifications</td><td>Firebase Cloud Messaging</td></tr>
+<tr><td>Advertising ID, install and ad impression events</td><td>Measuring install sources and ad performance</td><td>Adjust</td></tr>
+<tr><td>Advertising ID, app events</td><td>Ad measurement and install attribution</td><td>Facebook (Meta) SDK</td></tr>
+<tr><td>Transaction information (handled by Google; we never receive card numbers)</td><td>In-app purchases, checking entitlements</td><td>Google Play Billing</td></tr>
+<tr><td>In-app preferences, Sketchbook history</td><td>Stored locally on the device (Room database)</td><td>On device only</td></tr>
+</table></div>
+
+<h2>4. Third-party SDKs</h2>
+<ul>
+<li>Google Mobile Ads (AdMob) and Google User Messaging Platform (ad consent): <a href="https://policies.google.com/privacy">Google privacy policy</a></li>
+<li>Ad networks used through AdMob mediation: AppLovin (<a href="https://legal.applovin.com/privacy/">AppLovin privacy policy</a>), Meta Audience Network (<a href="https://www.facebook.com/privacy/policy/">Meta privacy policy</a>), InMobi (<a href="https://advertising.inmobi.com/privacy-policy">InMobi privacy policy</a>), Mintegral (<a href="https://www.mintegral.com/en/privacy">Mintegral privacy policy</a>), Moloco (<a href="https://www.moloco.com/terms-and-policies/privacy-portal">Moloco privacy policy</a>), Pangle (TikTok/ByteDance) (<a href="https://www.pangleglobal.com/privacy">Pangle privacy policy</a>), Unity Ads (<a href="https://unity.com/legal/privacy-policy">Unity privacy policy</a>), Liftoff Vungle (<a href="https://liftoff.ai/privacy-policy/">Liftoff privacy policy</a>)</li>
+<li>Firebase (Analytics, Crashlytics, Remote Config, Cloud Messaging): <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a></li>
+<li>Adjust: <a href="https://www.adjust.com/terms/privacy-policy/">Adjust privacy policy</a></li>
+<li>Facebook SDK (Meta): <a href="https://www.facebook.com/privacy/policy/">Meta privacy policy</a></li>
+<li>Google Play Billing: <a href="https://policies.google.com/privacy">Google privacy policy</a></li>
+</ul>
+
+<h2>5. Your rights</h2>
+<p>You can: reset or delete your advertising ID, or opt out of personalized ads, in Android Settings (Google, Ads); revoke the camera or notification permission in system settings; delete saved photos and videos from your device's gallery; clear the app's data or uninstall the app to delete local data. Depending on where you live, you may have the right to access, correct or delete your data, or to withdraw consent; to make a request, contact us using the details below.</p>
+
+<h2>6. Children</h2>
+<p>The app is not directed at children under 13, and we do not knowingly collect data from children.</p>
+
+<h2>7. Storage and security</h2>
+<p>Data sent to third-party services is transmitted over HTTPS. Data collected by third parties is governed by their own policies. This website is hosted on GitHub Pages; GitHub may log visitors' IP addresses for security, under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>.</p>
+
+<h2>8. Changes to this policy</h2>
+<p>We may update this policy; the new version will be posted on this page with its update date.</p>
+
+<h2>9. Contact</h2>
+<p>[PUBLISHER_NAME]: <a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a></p>
+</main>
+<footer class="foot">
+  <p>SketchLens, anime tracing on paper</p>
+  <nav aria-label="Site"><a href="index.html">Home</a><a href="terms.html">Terms of use</a><a href="mailto:[CONTACT_EMAIL]">Contact</a></nav>
+  <p>&copy; 2026 [PUBLISHER_NAME]</p>
+</footer>
+</body>
+</html>
