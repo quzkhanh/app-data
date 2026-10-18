@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy - AR Trace Sketch</title>
+<link rel="icon" href="img/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="how-to-use.html"><img src="img/icon.png" width="36" height="36" alt="">AR Trace Sketch</a>
+  <nav aria-label="Site"><a href="how-to-use.html">How to use</a><a href="privacy-policy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav>
+</header>
+<main class="doc">
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: October 19, 2026</p>
+<p class="note">Draft: the publisher name and contact email are still to be filled in, and this policy is pending review by [PUBLISHER_NAME].</p>
+<p>AR Trace Sketch (package com.qz.artracesketch, "the app") is published by [PUBLISHER_NAME] ("we", "us"). This policy explains what data the app handles and which third parties are involved.</p>
+
+<h2>1. Summary</h2>
+<p>The app does not require an account. The camera preview and the photos you take, upload or create stay on your device and are never uploaded to our servers. The app uses the third-party services listed below for advertising, analytics, crash reporting, remote configuration, notifications and payments.</p>
+
+<h2>2. Permissions the app uses</h2>
+<div class="table-wrap"><table>
+<tr><th>Permission</th><th>Purpose</th></tr>
+<tr><td>CAMERA</td><td>Shows the camera preview in Sketch mode so the picture can be laid over your paper, and takes photos (a photo to draw from in Upload, or a photo of your finished drawing). Camera images are processed on the device and are not uploaded. If you decline, the rest of the app, including Trace mode, still works.</td></tr>
+<tr><td>READ_MEDIA_IMAGES (Android 13 and later), READ_EXTERNAL_STORAGE (Android 12 and earlier)</td><td>Lets you browse the photos and albums on your device to choose one picture to draw. The app reads the photo list only on the device, copies only the picture you choose into the app's private storage, and uploads nothing.</td></tr>
+<tr><td>POST_NOTIFICATIONS (Android 13 and later)</td><td>Allows notifications sent through Firebase Cloud Messaging. You can turn notifications off at any time in system settings.</td></tr>
+<tr><td>INTERNET, ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE</td><td>Downloads drawing templates and configuration, shows ads, sends analytics and checks the connection.</td></tr>
+<tr><td>AD_ID, ACCESS_ADSERVICES_* (Privacy Sandbox)</td><td>Declared by the advertising and analytics SDKs: reading the advertising identifier, ad measurement and attribution.</td></tr>
+<tr><td>BILLING</td><td>Buying Premium (ad-free) through Google Play.</td></tr>
+<tr><td>Other permissions declared by SDKs</td><td>VIBRATE and CHECK_LICENSE (AppLovin ad SDK): haptic feedback in ads and checking the app's Google Play license. WAKE_LOCK and FOREGROUND_SERVICE (Firebase and ads SDKs): let events be sent and background tasks finish reliably. com.google.android.c2dm.permission.RECEIVE (Firebase Cloud Messaging): receives push notifications. BIND_GET_INSTALL_REFERRER_SERVICE (Google Play Install Referrer): identifies the install source for attribution. com.amazon.privacypass.ATTEST (Liftoff Vungle ad SDK): ad fraud prevention. These permissions do not give access to your photos, camera, location or contacts.</td></tr>
+</table></div>
+<p>The app does not request microphone, location or contacts permissions. When you tap Download, your drawing photo is saved to Pictures / AR Trace Sketch through Android's MediaStore, which needs no extra permission.</p>
+
+<h2>3. Data we and the SDKs may collect</h2>
+<div class="table-wrap"><table>
+<tr><th>Data</th><th>Purpose</th><th>Processed by</th></tr>
+<tr><td>Photos you take or choose, Text Art you create, photos of your drawings</td><td>Shown in Upload and Library and used as drawing guides. They stay in the app's private storage, or in your gallery when you tap Download. They leave your device only when you choose Share.</td><td>On device only</td></tr>
+<tr><td>Favorites, recently used pictures, search history, language and other preferences</td><td>Remembering your choices</td><td>On device only (local database)</td></tr>
+<tr><td>Advertising ID, IP address and approximate location inferred from it, device information, ad interactions</td><td>Showing ads, measuring ad performance and preventing fraud</td><td>Google AdMob and the mediation ad networks listed in section 4</td></tr>
+<tr><td>Usage events, device information, app identifiers</td><td>Usage analytics and improving the app</td><td>Firebase Analytics</td></tr>
+<tr><td>Crash reports, device state at the time of the error</td><td>Finding and fixing bugs</td><td>Firebase Crashlytics</td></tr>
+<tr><td>Device information, app version</td><td>Turning features on or off and updating settings without a new app version</td><td>Firebase Remote Config</td></tr>
+<tr><td>Device token</td><td>Sending push notifications</td><td>Firebase Cloud Messaging</td></tr>
+<tr><td>Advertising ID, install and ad revenue events</td><td>Measuring install sources and ad performance</td><td>Adjust</td></tr>
+<tr><td>Advertising ID, app events, ad revenue events</td><td>Ad measurement and install attribution</td><td>Facebook (Meta) SDK</td></tr>
+<tr><td>Purchase information (handled by Google; we never receive card numbers)</td><td>In-app purchases and restoring Premium</td><td>Google Play Billing</td></tr>
+<tr><td>Whether you have rated the app (Rate us dialog)</td><td>Not asking you again. The feedback text and email fields in that dialog are not sent or stored; 4 or 5 stars opens Google Play's own review window.</td><td>On device only; Google Play In-App Review</td></tr>
+</table></div>
+<p>Drawing templates are downloaded from a content server hosted on GitHub; GitHub may log the IP address of the request for security, under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>. No personal data is sent with these requests.</p>
+
+<h2>4. Third-party SDKs</h2>
+<ul>
+<li>Google Mobile Ads (AdMob) and Google User Messaging Platform (ad consent): <a href="https://policies.google.com/privacy">Google privacy policy</a></li>
+<li>Ad networks used through AdMob mediation: AppLovin (<a href="https://legal.applovin.com/privacy/">AppLovin privacy policy</a>), Meta Audience Network (<a href="https://www.facebook.com/privacy/policy/">Meta privacy policy</a>), InMobi (<a href="https://advertising.inmobi.com/privacy-policy">InMobi privacy policy</a>), Mintegral (<a href="https://www.mintegral.com/en/privacy">Mintegral privacy policy</a>), Moloco (<a href="https://www.moloco.com/terms-and-policies/privacy-portal">Moloco privacy policy</a>), Pangle (<a href="https://www.pangleglobal.com/privacy">Pangle privacy policy</a>), Unity Ads (<a href="https://unity.com/legal/privacy-policy">Unity privacy policy</a>), Liftoff Vungle (<a href="https://liftoff.ai/privacy-policy/">Liftoff privacy policy</a>)</li>
+<li>Firebase (Analytics, Crashlytics, Remote Config, Cloud Messaging): <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a></li>
+<li>Adjust: <a href="https://www.adjust.com/terms/privacy-policy/">Adjust privacy policy</a></li>
+<li>Facebook SDK (Meta): <a href="https://www.facebook.com/privacy/policy/">Meta privacy policy</a></li>
+<li>Google Play Billing and Google Play In-App Review: <a href="https://policies.google.com/privacy">Google privacy policy</a></li>
+</ul>
+
+<h2>5. Your choices and rights</h2>
+<p>You can: reset or delete your advertising ID, or opt out of personalized ads, in Android Settings (Google, Ads); change your ad consent choice where the consent form is shown; revoke the camera, photos or notification permission in system settings; delete uploads and artwork inside the app, or saved photos from your gallery; buy Premium to stop ads; clear the app's data or uninstall the app to delete all local data. Depending on where you live, you may have the right to access, correct or delete your data, or to withdraw consent; to make a request, contact us using the details below.</p>
+
+<h2>6. Children</h2>
+<p>The app is not directed at children under 13, and we do not knowingly collect data from children.</p>
+
+<h2>7. Storage and security</h2>
+<p>Data sent to third-party services is transmitted over HTTPS. Data collected by third parties is governed by their own policies. This website is hosted on GitHub Pages; GitHub may log visitors' IP addresses for security, under the GitHub privacy statement linked above.</p>
+
+<h2>8. Changes to this policy</h2>
+<p>We may update this policy; the new version will be posted on this page with its update date.</p>
+
+<h2>9. Contact</h2>
+<p>[PUBLISHER_NAME]: <a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a></p>
+</main>
+<footer class="foot">
+  <nav aria-label="Site"><a href="how-to-use.html">How to use</a><a href="terms.html">Terms of use</a><a href="mailto:[CONTACT_EMAIL]">Contact</a></nav>
+  <p>&copy; 2026 [PUBLISHER_NAME]</p>
+</footer>
+</body>
+</html>
