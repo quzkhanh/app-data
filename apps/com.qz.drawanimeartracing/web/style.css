@@ -184,7 +184,8 @@ p { margin: 0; }
 .track { height: 6px; border-radius: 3px; background: var(--field-high); position: relative; margin-top: 14px; }
 .track b { position: absolute; inset: 0 40% 0 0; border-radius: 3px; background: var(--ink); }
 .track i { position: absolute; left: 60%; top: 50%; width: 24px; height: 24px; margin: -12px 0 0 -12px; border-radius: 50%; background: var(--paper); border: 2px solid var(--ink); }
-.chips { display: flex; gap: 8px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.panel .text-art { margin: 14px 0; font: 800 var(--t-l)/1.1 var(--font-display); color: transparent; -webkit-text-stroke: 1.5px var(--ink); }
 .chip { display: inline-flex; align-items: center; min-height: 36px; padding: 0 16px; border-radius: var(--radius-full); background: var(--paper); font-weight: 600; }
 .chip.on { background: var(--ink); color: var(--bg); }
 .lock { display: flex; align-items: center; gap: 16px; font-weight: 600; }
