@@ -1,4 +1,4 @@
-/* Charge Visuals web. Màu, font, spacing, radius, motion lấy từ tokens.css (bản chép design/tokens.css). */
+/* Voltaura web. Màu, font, spacing, radius, motion lấy từ tokens.css (bản chép design/tokens.css). */
 :root {
   --ground: var(--md-sys-color-surface);
   --ink: var(--md-sys-color-on-surface);
