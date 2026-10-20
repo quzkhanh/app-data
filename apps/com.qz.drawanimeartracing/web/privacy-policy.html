@@ -14,7 +14,7 @@
 </header>
 <main class="doc">
 <h1>Privacy Policy</h1>
-<p class="meta">Last updated: October 18, 2026</p>
+<p class="meta">Last updated: October 20, 2026</p>
 <p class="note">Draft: the publisher name and contact email are still to be filled in, and this policy is pending review by [PUBLISHER_NAME].</p>
 <p>TracePal: AR Drawing Anime (package com.qz.drawanimeartracing, "the app") is published by [PUBLISHER_NAME] ("we", "us"). This policy explains what data the app handles and which third parties are involved.</p>
 
@@ -26,6 +26,7 @@
 <tr><th>Permission</th><th>Purpose</th></tr>
 <tr><td>CAMERA</td><td>Shows the camera preview so the line-art guide can be overlaid on your paper (AR), and records time-lapse videos. Camera data is processed on the device and is not uploaded. If you decline, Trace mode still works without the camera.</td></tr>
 <tr><td>POST_NOTIFICATIONS (Android 13 and later)</td><td>Shows notifications (via Firebase Cloud Messaging) about new templates and lessons. The app asks only once, after your first saved drawing; it is optional. You can decline, or turn notifications off at any time in system settings.</td></tr>
+<tr><td>RECEIVE_BOOT_COMPLETED</td><td>Re-schedules the daily morning notification after your phone restarts, so it keeps arriving without opening the app. A normal permission granted at install; the app does nothing else at startup and reads no data. If notifications are off, nothing is scheduled.</td></tr>
 <tr><td>WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE (Android 9 only)</td><td>Only on Android 9, in a single storage prompt: to save your drawings to the Pictures folder and time-lapse videos to the Movies folder, and to read back the app's own album to restore your Sketchbook. On Android 10 and later the app saves through MediaStore and does not declare these permissions.</td></tr>
 <tr><td>INTERNET, ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE</td><td>Downloads templates, lessons and configuration, shows ads, sends analytics, and checks the connection.</td></tr>
 <tr><td>AD_ID, ACCESS_ADSERVICES_* (Privacy Sandbox)</td><td>Declared by the advertising and analytics SDKs: reading the advertising identifier, ad measurement and attribution.</td></tr>
